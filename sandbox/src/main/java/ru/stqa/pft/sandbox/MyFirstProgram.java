@@ -1,8 +1,5 @@
 package ru.stqa.pft.sandbox;
 
-import javax.swing.plaf.synth.SynthTextAreaUI;
-import java.sql.SQLOutput;
-
 public class MyFirstProgram {
 
   public static void main(String[] args) {
@@ -10,9 +7,9 @@ public class MyFirstProgram {
     hello("user");
     hello("everybody everywhere");
 
+Square s = new Square(5);
 
-    double l = 5;
-    System.out.println("Площадь квадрата со стороной " + l + "= " + area(l));
+    System.out.println("Площадь квадрата со стороной " + s.l + "= " + s.area());
 
   }
   public static void hello (String somebody) {
@@ -20,7 +17,5 @@ public class MyFirstProgram {
     System.out.println("Hello " + somebody + "!");
   }
 
-  public static double area(double len) {
-    return len * len;
-  }
+
 }
