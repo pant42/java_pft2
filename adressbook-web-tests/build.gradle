@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = "package ru.stqa.pft.sandbox.MyFirstProgram"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.5'
+    implementation 'org.jetbrains:annotations:20.1.0'
+}
