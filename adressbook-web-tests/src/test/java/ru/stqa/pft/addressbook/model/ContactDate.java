@@ -1,4 +1,4 @@
-package ru.stqa.pft.addressbook;
+package ru.stqa.pft.addressbook.model;
 
 public record ContactDate(String firstname, String middlename, String lastname, String nickname, String company,
                           String address, String homeTel, String mobileTel, String workTel, String fax, String email,
