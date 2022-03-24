@@ -7,19 +7,19 @@ import ru.stqa.pft.sandbox.Equation;
 public class EquationTests {
 
   @Test
-  public void test1() {
+  public void test1N0() {
     Equation e = new Equation(1, 1, 1);
     Assert.assertEquals(e.rootNumber(), 0);
   }
 
   @Test
-  public void test2() {
+  public void test2N1() {
     Equation e = new Equation(1, 2, 1);
     Assert.assertEquals(e.rootNumber(), 1);
   }
 
   @Test
-  public void test3() {
+  public void test3N2() {
     Equation e = new Equation(1, 5, 6);
     Assert.assertEquals(e.rootNumber(), 2);
   }
