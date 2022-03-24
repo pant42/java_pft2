@@ -5,7 +5,7 @@ import ru.stqa.pft.addressbook.model.ContactDate;
 
 public class ContactModificationTest extends TestBase {
   @Test
-  public void testContactModification () {
+  public void testContactModification() {
 
     app.getContactHelper().gotoHomePage();
     app.getContactHelper().selectionContact();

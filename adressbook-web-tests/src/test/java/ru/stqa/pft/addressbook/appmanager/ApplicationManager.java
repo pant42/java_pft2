@@ -7,10 +7,10 @@ import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
   WebDriver wd;
-  private  NavigationHelper navigationHelper;
+  private NavigationHelper navigationHelper;
   private SessionHelper sessionHelper;
   private GroupHelper groupHelper;
-  private  ContactHelper contactHelper;
+  private ContactHelper contactHelper;
 
   JavascriptExecutor js;
 
@@ -43,7 +43,6 @@ public class ApplicationManager {
       return false;
     }
   }
-
 
 
   public ContactHelper getContactHelper() {
