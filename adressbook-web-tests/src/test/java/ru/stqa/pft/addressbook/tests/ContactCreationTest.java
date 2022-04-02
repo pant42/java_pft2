@@ -16,7 +16,7 @@ public class ContactCreationTest extends TestBase {
                     "Страна, область, город, улица, дом 5 кв 1",
                     "123456789",
                     "aa@in.ru",
-                    "test1"),
+                    "Тест1"),
             true);
     app.getContactHelper().submitContactCreation();
     app.getNavigationHelper().returnToHomePage();
