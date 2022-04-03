@@ -9,17 +9,13 @@ public class ContactCreationTest extends TestBase {
   public void testContactCreation() throws Exception {
 
     app.getContactHelper().gotoHomePage();
-    app.getContactHelper().initContactCreation();
-    app.getContactHelper().fillContactForm(new ContactData(
-                    "Имя",
-                    "Фамилия",
-                    "Страна, область, город, улица, дом 5 кв 1",
-                    "123456789",
-                    "aa@in.ru",
-                    "Тест1"),
-            true);
-    app.getContactHelper().submitContactCreation();
-    app.getNavigationHelper().returnToHomePage();
+    app.getContactHelper().createContact(new ContactData(
+            "Имя",
+            "Фамилия",
+            "Страна, область, город, улица, дом 5 кв 1",
+            "123456789",
+            "aa@in.ru",
+            "Тест1"));
   }
 
 }
