@@ -38,8 +38,8 @@ public class ContactHelper extends HelperBase {
     click(By.linkText("home"));
   }
 
-  public void selectionContact() {
-    click(By.name("selected[]"));
+  public void selectionContact(int index) {
+    wd.findElements(By.name("selected[]")).get(index).click();;
   }
 
   public void deletionContact() {
