@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.tests;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
@@ -13,8 +14,6 @@ public class ContactModificationTest extends TestBase {
 
     app.getContactHelper().gotoHomePage();
 
-    List<ContactData> before = app.getContactHelper().getContactList();
-
     if (!app.getContactHelper().isThereAContact()) {
       app.getContactHelper().createContact(new ContactData(
               "Имя",
@@ -24,9 +23,10 @@ public class ContactModificationTest extends TestBase {
               "aa@ii.ru",
               "[none]"));
     }
+    List<ContactData> before = app.getContactHelper().getContactList();
 
-    app.getContactHelper().selectionContact(before.size()-1);
-    app.getContactHelper().initContactModification();
+    app.getContactHelper().selectionContact(before.size() - 1);
+    app.getContactHelper().initContactModification(42);
     app.getContactHelper().fillContactForm(new ContactData(
               "ИмяUPD",
               "ФамилияUPD",
@@ -37,6 +37,7 @@ public class ContactModificationTest extends TestBase {
             false);
     app.getContactHelper().submitContactModification();
     app.getNavigationHelper().returnToHomePage();
+
 
     List<ContactData> after = app.getContactHelper().getContactList();
     Assert.assertEquals(after.size(), before.size());
