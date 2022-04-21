@@ -22,7 +22,12 @@ public class GroupModificationTest extends TestBase {
     app.getGroupHelper().selectGroup(before.size() - 1);
     app.getGroupHelper().initGroupModification();
 
-    GroupData group = new GroupData(before.get(before.size()-1).getId(),"ТестUPD", "ТестUPD2", "ТестUPD3");
+    GroupData group = new GroupData(
+            before.get(before.size()-1).getId(),
+            "ТестUPD",
+            "ТестUPD2",
+            "ТестUPD3"
+    );
 
     app.getGroupHelper().fillGroupForm(group);
     app.getGroupHelper().submitGroupModification();

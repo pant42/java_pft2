@@ -16,11 +16,11 @@ public class ContactCreationTest extends TestBase {
     List<ContactData> before = app.getContactHelper().getContactList();
 
     app.getContactHelper().createContact(new ContactData(
-            "СоздИмя",
-            "СоздФамилия",
-            "Страна, область, город, улица, дом 5 кв 1",
-            "123456789",
-            "aa@in.ru",
+            "СоздИмя46",
+            "СоздФамилия46",
+            "Страна46, область, город, улица, дом 5 кв 1",
+            "463456789",
+            "46@in.ru",
             "[none]"));
 
     List<ContactData> after = app.getContactHelper().getContactList();
