@@ -81,12 +81,12 @@ public class ContactHelper extends HelperBase {
     List<ContactData> contacts = new ArrayList<ContactData>();
 
     //При прохождении цикла, который изымает данные для коллекции, есть проблема: путь до этемента "Фамилия"/"Имя" = ../tr[<t>]/td[2], где <t> - номер строки в таблице, вкл шапку табл..
-    //Для этого, мы введем переменную t, которая будет нашим "счетчиком"- по роли в цикле, и номером строки таблицы контактов- по призванию.№1 строка табл (№1 контакт) = tr2.
+    //Для этого, мы введем переменную t, которая будет нашим "счетчиком"- по роли в цикле, и номером строки таблицы контактов- по призванию.№1 строка контактов (№1 контакт) = tr2.
     int t = 1;
     List<WebElement> elements = wd.findElements(By.xpath("//*[@id=\"maintable\"]/tbody/tr[@name=\"entry\"]"));
     for (WebElement element : elements) {
       t = t + 1;
-      String id = element.findElement(By.tagName("input")).getAttribute("value");
+      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
       String firstname = element.findElement(By.xpath("//*[@id=\"maintable\"]/tbody/tr[" + t + "]/td[3]")).getText();
       String lastname = element.findElement(By.xpath("//*[@id=\"maintable\"]/tbody/tr[" + t + "]/td[2]")).getText();
 
