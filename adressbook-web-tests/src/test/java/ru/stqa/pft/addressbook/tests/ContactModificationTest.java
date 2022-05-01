@@ -1,14 +1,11 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
-import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public class ContactModificationTest extends TestBase {
@@ -35,7 +32,6 @@ public class ContactModificationTest extends TestBase {
 
 
     List<ContactData> before = app.getContactHelper().getContactList();
-
     int index = before.size() - 1;
 
     ContactData contact = new ContactData(
@@ -61,8 +57,6 @@ public class ContactModificationTest extends TestBase {
     after.sort(byId);
     Assert.assertEquals(before, after);
   }
-
-
 
 
 }

@@ -22,7 +22,7 @@ public class GroupCreationTest extends TestBase {
     List<GroupData> after = app.getGroupHelper().getGroupList();
     Assert.assertEquals(after.size(), before.size() + 1);
 
-     before.add(group);
+    before.add(group);
     Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
 
     Comparator<? super GroupData> byId = (c1, c2) -> Integer.compare(c1.getId(), c2.getId());
@@ -30,5 +30,6 @@ public class GroupCreationTest extends TestBase {
     after.sort(byId);
     Assert.assertEquals(before, after);
   }
+
 
 }

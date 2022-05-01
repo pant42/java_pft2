@@ -63,15 +63,13 @@ public class ContactHelper extends HelperBase {
   }
 
 
-
-
+  //Святая троица функций для создания/модификации/удаления , которые были сформированы для красивого внешнего вида тестов
   public void createContact(ContactData contact) {
     initContactCreation();
     fillContactForm(contact, true);
     submitContactCreation();
     gotoHomePage();
   }
-
   public void modifyContact(int index, ContactData contact) {
     selectionContact(index);
     initContactModification(index);
@@ -79,6 +77,13 @@ public class ContactHelper extends HelperBase {
     submitContactModification();
     gotoHomePage();
   }
+  public void deleteContact(int index) {
+    selectionContact(index);
+    deletionContact();
+    alertAccept();
+    gotoHomePage();
+  }
+
 
   public boolean isThereAContact() {
     return isElementPresent(By.name("selected[]"));
