@@ -14,6 +14,7 @@ public class GroupModificationTest extends TestBase {
 
   @BeforeMethod
 //Если нечего модифицировать - создай! как? вот тут и условие, надо ли создавать, как создавать, чем заполнить. Всё тут
+
   public void ensurePreconditions() {
     app.getGroupHelper().gotoGroupPage();
 
@@ -24,7 +25,6 @@ public class GroupModificationTest extends TestBase {
 
   @Test
   public void GroupModification() {
-
 
     List<GroupData> before = app.getGroupHelper().getGroupList();
 
