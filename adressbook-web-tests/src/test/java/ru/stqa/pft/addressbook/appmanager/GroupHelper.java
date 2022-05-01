@@ -55,6 +55,20 @@ public class GroupHelper extends HelperBase {
     gotoGroupPage();
   }
 
+  public void modifyGroup(int index, GroupData group) {
+    selectGroup(index);
+    initGroupModification();
+    fillGroupForm(group);
+    submitGroupModification();
+    gotoGroupPage();
+  }
+
+  public void deleteGroup(int index) {
+    selectGroup(index);
+    deleteSelectedGroups();
+    gotoGroupPage();
+  }
+
   public boolean isThereAGroup() {
     return isElementPresent(By.name("selected[]"));
   }
@@ -72,7 +86,7 @@ public class GroupHelper extends HelperBase {
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
       String name = element.getText();
 
-      GroupData group = new GroupData(id,name,null,null);
+      GroupData group = new GroupData(id, name, null, null);
       groups.add(group);
     }
 
