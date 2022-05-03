@@ -22,13 +22,13 @@ public class GroupDeletionTest extends TestBase {
   @Test
   public void testGroupDeletion() throws Exception {
 
-    List<GroupData> before = app.group().groupList();
+    List<GroupData> before = app.group().list();
 
     int index = before.size() - 1;
 
     app.group().delete(index);
 
-    List<GroupData> after = app.group().groupList();
+    List<GroupData> after = app.group().list();
     Assert.assertEquals(after.size(), index);
 
     before.remove(index);

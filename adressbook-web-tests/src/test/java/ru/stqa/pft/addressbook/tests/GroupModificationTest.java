@@ -24,7 +24,7 @@ public class GroupModificationTest extends TestBase {
   @Test
   public void GroupModification() {
 
-    List<GroupData> before = app.group().groupList();
+    List<GroupData> before = app.group().list();
 
     int index = before.size() - 1;
 
@@ -36,7 +36,7 @@ public class GroupModificationTest extends TestBase {
 
     app.group().modify(index, group);
 
-    List<GroupData> after = app.group().groupList();
+    List<GroupData> after = app.group().list();
     Assert.assertEquals(after.size(), before.size());
 
     before.remove(index);
