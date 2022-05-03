@@ -17,13 +17,13 @@ public class ContactCreationTest extends TestBase {
 
     List<ContactData> before = app.contact().contactList();
 
-    ContactData contact = new ContactData(
-            "СоздИмя46",
-            "СоздФамилия46",
-            "Страна46, область, город, улица, дом 5 кв 1",
-            "463456789",
-            "46@in.ru",
-            "[none]");
+    ContactData contact = new ContactData().
+            withFirstname("СоздИмяУдалить").
+            withLastname("СоздФамилияУдалить").
+            withAddress("СтранаУдалить, область, город, улица, дом 5 кв 1").
+            withHomeTel("463456789").
+            withEmail("46@in.ru").
+            withGroup("[none]");
 
     app.contact().create(contact);
 

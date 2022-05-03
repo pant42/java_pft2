@@ -17,13 +17,13 @@ public class ContactModificationTest extends TestBase {
     app.goTo().homePage();
 
     if (!app.contact().isThereAContact()) {
-      app.contact().create(new ContactData(
-              "Имя",
-              "Фамилия",
-              "Страна, область, город, улица, дом 5 кв 1",
-              "123456",
-              "aa@ii.ru",
-              "[none]"));
+      app.contact().create( new ContactData().
+              withFirstname("СоздИмяeLFK").
+              withLastname("СоздФамилия46").
+              withAddress("Страна46, область, город, улица, дом 5 кв 1").
+              withHomeTel("463456789").
+              withEmail("46@in.ru").
+              withGroup("[none]"));
     }
   }
 
@@ -34,14 +34,13 @@ public class ContactModificationTest extends TestBase {
     List<ContactData> before = app.contact().contactList();
     int index = before.size() - 1;
 
-    ContactData contact = new ContactData(
-            before.get(index).getId(),
-            "ИмяUPD",
-            "ФамилияUPD",
-            "СтранаUPD, область, город, улица, дом 5 кв 1",
-            "123456UPD",
-            "UPD@ii.ru",
-            "[none]");
+    ContactData contact =  new ContactData().
+            withFirstname("СоздИмя46").
+            withLastname("СоздФамилия46").
+            withAddress("Страна46, область, город, улица, дом 5 кв 1").
+            withHomeTel("463456789").
+            withEmail("46@in.ru").
+            withGroup("[none]");
 
     app.contact().modify(index, contact);
 
