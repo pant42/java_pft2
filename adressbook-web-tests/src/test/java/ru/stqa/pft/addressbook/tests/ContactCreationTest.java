@@ -19,9 +19,9 @@ public class ContactCreationTest extends TestBase {
     Set<ContactData> before = app.contact().all();
 
     ContactData contact = new ContactData().
-            withFirstname("СоздИмяУдалить").
-            withLastname("СоздФамилияУдалить").
-            withAddress("СтранаУдалить, область, город, улица, дом 5 кв 1").
+            withFirstname("СоздИмяСоздание").
+            withLastname("СоздФамилияСоздание").
+            withAddress("СтранаСоздание, область, город, улица, дом 5 кв 1").
             withHomeTel("463456789").
             withEmail("46@in.ru").
             withGroup("[none]");

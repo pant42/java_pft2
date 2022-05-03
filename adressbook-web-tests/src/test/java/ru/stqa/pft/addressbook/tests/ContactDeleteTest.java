@@ -21,11 +21,7 @@ public class ContactDeleteTest extends TestBase {
     if (!app.contact().isThereAContact()) {
       app.contact().create(new ContactData().
               withFirstname("СоздИмяУдалить").
-              withLastname("СоздФамилияУдалить").
-              withAddress("СтранаУдалить, область, город, улица, дом 5 кв 1").
-              withHomeTel("463456789").
-              withEmail("46@in.ru").
-              withGroup("[none]")
+              withLastname("СоздФамилияУдалить")
       );
     }
   }
