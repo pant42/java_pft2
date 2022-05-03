@@ -31,7 +31,7 @@ public class ContactModificationTest extends TestBase {
   public void testContactModification() {
 
 
-    List<ContactData> before = app.contact().contactList();
+    List<ContactData> before = app.contact().list();
     int index = before.size() - 1;
 
     ContactData contact =  new ContactData().
@@ -45,7 +45,7 @@ public class ContactModificationTest extends TestBase {
     app.contact().modify(index, contact);
 
 
-    List<ContactData> after = app.contact().contactList();
+    List<ContactData> after = app.contact().list();
     Assert.assertEquals(after.size(), before.size());
 
     before.remove(index);

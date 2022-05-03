@@ -31,12 +31,12 @@ public class ContactDeleteTest extends TestBase {
   @Test
   public void testContactDelete() throws Exception {
 
-    List<ContactData> before = app.contact().contactList();
+    List<ContactData> before = app.contact().list();
     int index = before.size() - 1;
 
     app.contact().delete(index);
 
-    List<ContactData> after = app.contact().contactList();
+    List<ContactData> after = app.contact().list();
     Assert.assertEquals(after.size(), index);
 
     before.remove(index);
