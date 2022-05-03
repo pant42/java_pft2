@@ -64,20 +64,20 @@ public class ContactHelper extends HelperBase {
 
 
   //Святая троица функций для создания/модификации/удаления , которые были сформированы для красивого внешнего вида тестов
-  public void createContact(ContactData contact) {
+  public void create(ContactData contact) {
     initContactCreation();
     fillContactForm(contact, true);
     submitContactCreation();
     gotoHomePage();
   }
-  public void modifyContact(int index, ContactData contact) {
+  public void modify(int index, ContactData contact) {
     selectionContact(index);
     initContactModification(index);
     fillContactForm(contact, false);
     submitContactModification();
     gotoHomePage();
   }
-  public void deleteContact(int index) {
+  public void delete(int index) {
     selectionContact(index);
     deletionContact();
     alertAccept();
@@ -93,7 +93,7 @@ public class ContactHelper extends HelperBase {
     return wd.findElements(By.name("selected[]")).size();
   }
 
-  public List<ContactData> getContactList() {
+  public List<ContactData> contactList() {
     List<ContactData> contacts = new ArrayList<ContactData>();
 
     //При прохождении цикла, который изымает данные для коллекции, есть проблема: путь до этемента "Фамилия"/"Имя" = ../tr[<t>]/td[2], где <t> - номер строки в таблице, вкл шапку табл..

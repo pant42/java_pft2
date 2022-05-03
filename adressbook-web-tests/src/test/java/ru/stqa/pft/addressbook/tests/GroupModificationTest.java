@@ -14,17 +14,17 @@ public class GroupModificationTest extends TestBase {
 //Если нечего модифицировать - создай! как? вот тут и условие, надо ли создавать, как создавать, чем заполнить. Всё тут
 
   public void ensurePreconditions() {
-    app.getGroupHelper().gotoGroupPage();
+    app.goTo().groupPage();
 
-    if (!app.getGroupHelper().isThereAGroup()) {
-      app.getGroupHelper().createGroup(new GroupData("Тест1", null, null));
+    if (!app.group().isThereAGroup()) {
+      app.group().create(new GroupData("Тест1", null, null));
     }
   }
 
   @Test
   public void GroupModification() {
 
-    List<GroupData> before = app.getGroupHelper().getGroupList();
+    List<GroupData> before = app.group().groupList();
 
     int index = before.size() - 1;
 
@@ -35,9 +35,9 @@ public class GroupModificationTest extends TestBase {
             "ТестUPD3"
     );
 
-    app.getGroupHelper().modifyGroup(index, group);
+    app.group().modify(index, group);
 
-    List<GroupData> after = app.getGroupHelper().getGroupList();
+    List<GroupData> after = app.group().groupList();
     Assert.assertEquals(after.size(), before.size());
 
     before.remove(index);

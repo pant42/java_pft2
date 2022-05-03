@@ -14,10 +14,10 @@ public class ContactDeleteTest extends TestBase {
 //Если нечего модифицировать - создай! как? вот тут и условие, надо ли создавать, как создавать, чем заполнить. Всё тут
 
   public void ensurePreconditions() {
-    app.getContactHelper().gotoHomePage();
+    app.contact().gotoHomePage();
 
-    if (!app.getContactHelper().isThereAContact()) {
-      app.getContactHelper().createContact(new ContactData(
+    if (!app.contact().isThereAContact()) {
+      app.contact().create(new ContactData(
               "Имя",
               "Фамилия",
               "Страна, область, город, улица, дом 5 кв 1",
@@ -30,12 +30,12 @@ public class ContactDeleteTest extends TestBase {
   @Test
   public void testContactDelete() throws Exception {
 
-    List<ContactData> before = app.getContactHelper().getContactList();
+    List<ContactData> before = app.contact().contactList();
     int index = before.size() - 1;
 
-    app.getContactHelper().deleteContact(index);
+    app.contact().delete(index);
 
-    List<ContactData> after = app.getContactHelper().getContactList();
+    List<ContactData> after = app.contact().contactList();
     Assert.assertEquals(after.size(), index);
 
     before.remove(index);

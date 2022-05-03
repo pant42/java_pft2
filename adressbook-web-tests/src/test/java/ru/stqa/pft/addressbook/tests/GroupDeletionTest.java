@@ -12,23 +12,23 @@ public class GroupDeletionTest extends TestBase {
   @BeforeMethod
 //Если нечего модифицировать - создай! как? вот тут и условие, надо ли создавать, как создавать, чем заполнить. Всё тут
   public void ensurePreconditions() {
-    app.getGroupHelper().gotoGroupPage();
+    app.group().gotoGroupPage();
 
-    if (!app.getGroupHelper().isThereAGroup()) {
-      app.getGroupHelper().createGroup(new GroupData("Тест1", null, null));
+    if (!app.group().isThereAGroup()) {
+      app.group().create(new GroupData("Тест1", null, null));
     }
   }
 
   @Test
   public void testGroupDeletion() throws Exception {
 
-    List<GroupData> before = app.getGroupHelper().getGroupList();
+    List<GroupData> before = app.group().groupList();
 
     int index = before.size() - 1;
 
-    app.getGroupHelper().deleteGroup(index);
+    app.group().delete(index);
 
-    List<GroupData> after = app.getGroupHelper().getGroupList();
+    List<GroupData> after = app.group().groupList();
     Assert.assertEquals(after.size(), index);
 
     before.remove(index);
