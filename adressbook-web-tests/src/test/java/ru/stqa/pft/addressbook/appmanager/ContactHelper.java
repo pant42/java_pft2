@@ -9,9 +9,7 @@ import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -76,19 +74,16 @@ public class ContactHelper extends HelperBase {
     initContactCreation();
     fillContactForm(contact, true);
     submitContactCreation();
+    contactCache = null;
     gotoHomePage();
   }
+
   public void modify(ContactData contact) {
     selectionContactById(contact.getId());
     initContactModification();
     fillContactForm(contact, false);
     submitContactModification();
-    gotoHomePage();
-  }
-  public void delete(int index) {
-    selectionContact(index);
-    deletionContact();
-    alertAccept();
+    contactCache = null;
     gotoHomePage();
   }
 
@@ -96,6 +91,7 @@ public class ContactHelper extends HelperBase {
     selectionContactById(contact.getId());
     deletionContact();
     alertAccept();
+    contactCache = null;
     gotoHomePage();
   }
 
@@ -131,8 +127,13 @@ public class ContactHelper extends HelperBase {
     return contacts;
   }
 
+  private Contacts contactCache = null;
+
   public Contacts all() {
-   Contacts contacts = new Contacts();
+    if (contactCache != null) {
+      return new Contacts(contactCache);
+    }
+    contactCache = new Contacts();
 
     //При прохождении цикла, который изымает данные для коллекции, есть проблема: путь до этемента "Фамилия"/"Имя" = ../tr[<t>]/td[2], где <t> - номер строки в таблице, вкл шапку табл..
     //Для этого, мы введем переменную t, которая будет нашим "счетчиком"- по роли в цикле, и номером строки таблицы контактов- по призванию.№1 строка контактов (№1 контакт) = tr2.
@@ -144,14 +145,12 @@ public class ContactHelper extends HelperBase {
       String firstname = element.findElement(By.xpath("//*[@id=\"maintable\"]/tbody/tr[" + t + "]/td[3]")).getText();
       String lastname = element.findElement(By.xpath("//*[@id=\"maintable\"]/tbody/tr[" + t + "]/td[2]")).getText();
 
-      ContactData contact = new ContactData().
+      contactCache.add(new ContactData().
               withId(id).
               withFirstname(firstname).
-              withLastname(lastname);
-
-      contacts.add(contact);
+              withLastname(lastname));
     }
-    return contacts;
+    return new Contacts(contactCache);
   }
 
 
