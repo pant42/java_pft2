@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.model;
 
 public class ContactData {
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -25,7 +26,9 @@ public class ContactData {
   private  String firstname;
   private  String lastname;
   private  String address;
-  private  String homeTel;
+  private  String homePhone;
+  private  String mobilePhone;
+  private  String workPhone;
   private  String email;
   private String group;
 
@@ -48,7 +51,17 @@ public class ContactData {
   }
 
   public ContactData withHomeTel(String homeTel) {
-    this.homeTel = homeTel;
+    this.homePhone = homeTel;
+    return this;
+  }
+
+  public ContactData withMobilePhone(String mobilePhone) {
+    this.mobilePhone = mobilePhone;
+    return this;
+  }
+
+  public ContactData withWorkPhone(String workPhone) {
+    this.workPhone = workPhone;
     return this;
   }
 
@@ -83,8 +96,16 @@ public class ContactData {
     return address;
   }
 
-  public String getHomeTel() {
-    return homeTel;
+  public String getHomePhone() {
+    return homePhone;
+  }
+
+  public String getMobilePhone() {
+    return mobilePhone;
+  }
+
+  public String getWorkPhone() {
+    return workPhone;
   }
 
   public String getEmail() {
