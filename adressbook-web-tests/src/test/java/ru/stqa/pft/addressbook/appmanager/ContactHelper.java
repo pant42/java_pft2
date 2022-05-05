@@ -8,7 +8,6 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ContactHelper extends HelperBase {
@@ -41,10 +40,6 @@ public class ContactHelper extends HelperBase {
 
   public void gotoHomePage() {
     click(By.linkText("home"));
-  }
-
-  public void selectionContact(int index) {
-    wd.findElements(By.name("selected[]")).get(index).click();
   }
 
   public void selectionContactById(int id) {
@@ -98,33 +93,6 @@ public class ContactHelper extends HelperBase {
 
   public boolean isThereAContact() {
     return isElementPresent(By.name("selected[]"));
-  }
-
-  public int getContactCount() {
-    return wd.findElements(By.name("selected[]")).size();
-  }
-
-  public List<ContactData> list() {
-    List<ContactData> contacts = new ArrayList<ContactData>();
-
-    //При прохождении цикла, который изымает данные для коллекции, есть проблема: путь до этемента "Фамилия"/"Имя" = ../tr[<t>]/td[2], где <t> - номер строки в таблице, вкл шапку табл..
-    //Для этого, мы введем переменную t, которая будет нашим "счетчиком"- по роли в цикле, и номером строки таблицы контактов- по призванию.№1 строка контактов (№1 контакт) = tr2.
-    int t = 1;
-    List<WebElement> elements = wd.findElements(By.xpath("//*[@id=\"maintable\"]/tbody/tr[@name=\"entry\"]"));
-    for (WebElement element : elements) {
-      t = t + 1;
-      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      String firstname = element.findElement(By.xpath("//*[@id=\"maintable\"]/tbody/tr[" + t + "]/td[3]")).getText();
-      String lastname = element.findElement(By.xpath("//*[@id=\"maintable\"]/tbody/tr[" + t + "]/td[2]")).getText();
-
-      ContactData contact = new ContactData().
-              withId(id).
-              withFirstname(firstname).
-              withLastname(lastname);
-
-      contacts.add(contact);
-    }
-    return contacts;
   }
 
   private Contacts contactCache = null;
