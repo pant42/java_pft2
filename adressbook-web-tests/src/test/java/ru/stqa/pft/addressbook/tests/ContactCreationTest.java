@@ -15,13 +15,13 @@ public class ContactCreationTest extends TestBase {
 
     app.contact().gotoHomePage();
 
-    Contacts before = app.contact().all();
+    Contacts before = app.contact().allCache();
 
     ContactData contact = new ContactData().
             withFirstname("СоздИмяСоздание").
             withLastname("СоздФамилияСоздание").
             withAddress("СтранаСоздание, область, город, улица, дом 5 кв 1").
-            withHomeTel("463456789").
+            withHomePhone("463456789").
             withEmail("46@in.ru").
             withGroup("[none]");
 
@@ -29,7 +29,7 @@ public class ContactCreationTest extends TestBase {
 
     assertEquals(app.contact().count(), before.size() + 1);
 
-    Contacts after = app.contact().all();
+    Contacts after = app.contact().allCache();
 
     assertEquals(after.size(), before.size() + 1);
     assertThat(after, equalTo

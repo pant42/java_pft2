@@ -50,7 +50,7 @@ public class ContactData {
     return this;
   }
 
-  public ContactData withHomeTel(String homeTel) {
+  public ContactData withHomePhone(String homeTel) {
     this.homePhone = homeTel;
     return this;
   }

@@ -8,7 +8,9 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -103,7 +105,7 @@ public class ContactHelper extends HelperBase {
 
   private Contacts contactCache = null;
 
-  public Contacts all() {
+  public Contacts allCache() {
     if (contactCache != null) {
       return new Contacts(contactCache);
     }
@@ -127,6 +129,29 @@ public class ContactHelper extends HelperBase {
     return new Contacts(contactCache);
   }
 
+  public Set<ContactData> all() {
+    Set<ContactData> contacts = new HashSet<ContactData>();
+    List<WebElement> rows = wd.findElements(By.name("entry"));
+    for (WebElement row:rows){
+      List<WebElement> cells = row.findElements(By.tagName("td"));
+      int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
+      String lastname = cells.get(1).getText();
+      String firstname = cells.get(2).getText();
+
+      String[] phones = cells.get(5).getText().split("\n");
+
+      contacts.add(new ContactData().
+              withId(id).
+              withFirstname(firstname).
+              withLastname(lastname).
+              withHomePhone(phones[0]).
+              withMobilePhone(phones[1]).
+              withWorkPhone(phones[2])
+      );
+    }
+    return contacts;
+  }
+
   public int count() {
     return wd.findElements(By.name("selected[]")).size();
   }
@@ -145,7 +170,7 @@ public class ContactHelper extends HelperBase {
                     contact.getId()).
             withFirstname(firstname).
             withLastname(lastname).
-            withHomeTel(home).
+            withHomePhone(home).
             withMobilePhone(mobile).
             withWorkPhone(work)
             ;
