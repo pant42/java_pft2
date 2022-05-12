@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.tests;
 
+import org.hamcrest.MatcherAssert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
@@ -32,8 +33,11 @@ public class ContactPhoneTest extends TestBase {
     ContactData contact = app.contact().all().iterator().next();
     ContactData contactInfoFromEditForm = app.contact().InfoFromEditForm(contact);
 
+//Сами проверки----------------------------------------------------------------------------------------
+    MatcherAssert.assertThat(contact.getAddress(), equalTo(contactInfoFromEditForm.getAddress()));
     assertThat(contact.getAllEmails(), equalTo(margeEmails(contactInfoFromEditForm)));
     assertThat(contact.getAllPhones(), equalTo(margePhones(contactInfoFromEditForm)));
+//-----------------------------------------------------------------------------------------------------
   }
 
   private String margeEmails(ContactData contact) {
@@ -64,4 +68,6 @@ public class ContactPhoneTest extends TestBase {
             replaceAll("\\s", "").
             replaceAll("[-()]", "");
   }
+
+
 }
