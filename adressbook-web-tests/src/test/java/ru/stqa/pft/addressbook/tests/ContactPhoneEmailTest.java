@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ContactPhoneTest extends TestBase {
+public class ContactPhoneEmailTest extends TestBase {
 
   @BeforeMethod
 //Если нечего модифицировать - создай! как? вот тут и условие, надо ли создавать, как создавать, чем заполнить. Всё тут
@@ -33,11 +33,11 @@ public class ContactPhoneTest extends TestBase {
     ContactData contact = app.contact().all().iterator().next();
     ContactData contactInfoFromEditForm = app.contact().InfoFromEditForm(contact);
 
-//Сами проверки----------------------------------------------------------------------------------------
+//Сами проверки-------------------------------------------------------
     MatcherAssert.assertThat(contact.getAddress(), equalTo(contactInfoFromEditForm.getAddress()));
     assertThat(contact.getAllEmails(), equalTo(margeEmails(contactInfoFromEditForm)));
     assertThat(contact.getAllPhones(), equalTo(margePhones(contactInfoFromEditForm)));
-//-----------------------------------------------------------------------------------------------------
+//-------------------------------------------------------
   }
 
   private String margeEmails(ContactData contact) {
@@ -56,10 +56,12 @@ public class ContactPhoneTest extends TestBase {
 
                     contact.getHomePhone(),
                     contact.getMobilePhone(),
-                    contact.getWorkPhone())
+                    contact.getWorkPhone(),
+                    contact.getPhone2())
+
 
             .stream().filter((s) -> !s.equals("")).
-            map(ContactPhoneTest::cleaned).
+            map(ContactPhoneEmailTest::cleaned).
             collect(Collectors.joining("\n"));
   }
 

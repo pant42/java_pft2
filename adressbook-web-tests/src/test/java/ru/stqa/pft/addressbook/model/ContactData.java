@@ -10,6 +10,7 @@ public class ContactData {
   private String homePhone;
   private String mobilePhone;
   private String workPhone;
+  private String phone2;
 
   private String email;
   private String email2;
@@ -19,7 +20,7 @@ public class ContactData {
   private String allPhones;
   private String allEmails;
 
-//Сеттеры-------------------------------------------------------
+//Сеттеры-------------------------------------------------
 
   public ContactData withId(int id) {
     this.id = id;
@@ -41,6 +42,7 @@ public class ContactData {
     return this;
   }
 
+  //-------------------------------------------------
   public ContactData withHomePhone(String homeTel) {
     this.homePhone = homeTel;
     return this;
@@ -56,6 +58,12 @@ public class ContactData {
     return this;
   }
 
+  public ContactData withPhone2(String phone2) {
+    this.phone2 = phone2;
+    return this;
+  }
+
+  //-------------------------------------------------
   public ContactData withEmail(String email) {
     this.email = email;
     return this;
@@ -71,11 +79,13 @@ public class ContactData {
     return this;
   }
 
+  //-------------------------------------------------
   public ContactData withGroup(String group) {
     this.group = group;
     return this;
   }
 
+  //-------------------------------------------------
   public ContactData withAllPhones(String allPhones) {
     this.allPhones = allPhones;
     return this;
@@ -86,7 +96,7 @@ public class ContactData {
     return this;
   }
 
-//Геттеры-------------------------------------------------------
+  //Геттеры-------------------------------------------------
   public int getId() {
     return id;
   }
@@ -103,6 +113,7 @@ public class ContactData {
     return address;
   }
 
+  //-------------------------------------------------
   public String getHomePhone() {
     return homePhone;
   }
@@ -115,6 +126,11 @@ public class ContactData {
     return workPhone;
   }
 
+  public String getPhone2() {
+    return phone2;
+  }
+
+  //-------------------------------------------------
   public String getEmail() {
     return email;
   }
@@ -127,10 +143,12 @@ public class ContactData {
     return email3;
   }
 
+  //-------------------------------------------------
   public String getGroup() {
     return group;
   }
 
+  //-------------------------------------------------
   public String getAllPhones() {
     return allPhones;
   }
@@ -138,7 +156,8 @@ public class ContactData {
   public String getAllEmails() {
     return allEmails;
   }
-//-------------------------------------------------------
+
+  //-------------------------------------------------------
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
