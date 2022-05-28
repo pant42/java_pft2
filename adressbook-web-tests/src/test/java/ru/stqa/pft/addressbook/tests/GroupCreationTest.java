@@ -23,10 +23,10 @@ public class GroupCreationTest extends TestBase {
     BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/groups.csv"));
     String line = reader.readLine();
 
-    while (line!=null){
-      String [] split = line.split(";");
+    while (line != null) {
+      String[] split = line.split(";");
 
-      list.add(new Object[] {new GroupData().
+      list.add(new Object[]{new GroupData().
               withName(split[0]).
               withHeader(split[1]).
               withFooter(split[2])
@@ -72,4 +72,6 @@ public class GroupCreationTest extends TestBase {
 
     assertThat(after, equalTo(before));
   }
+
+
 }
