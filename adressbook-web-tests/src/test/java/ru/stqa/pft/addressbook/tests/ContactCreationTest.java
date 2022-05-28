@@ -4,9 +4,11 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
-import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -19,35 +21,30 @@ public class ContactCreationTest extends TestBase {
 
   @DataProvider
 
-  public Iterator<Object[]> validContacts() {
+  public Iterator<Object[]> validContacts() throws IOException {
     File photo = new File("src/test/resources/stru.png");
     List<Object[]> list = new ArrayList<Object[]>();
-    list.add(new Object[]{new ContactData().
-            withFirstname("СИмя1").
-            withLastname("СФамилия1").
-            withAddress("САдрес 1").
-            withHomePhone("1634567891").
-            withEmail("1sa@in.ru").
-            withPhoto(photo)
-    });
-    list.add(new Object[]{new ContactData().
-            withFirstname("СИмя2").
-            withLastname("СФамилия2").
-            withAddress("САдрес 2").
-            withHomePhone("2634567892").
-            withEmail("2sa@in.ru").
-            withPhoto(photo)
-    });
-    list.add(new Object[]{new ContactData().
-            withFirstname("СИмя3").
-            withLastname("СФамилия3").
-            withAddress("САдрес 3").
-            withHomePhone("3634567893").
-            withEmail("3sa@in.ru").
-            withPhoto(photo)
-    });
+    BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/contacts.csv"));
+    String line = reader.readLine();
+
+    while (line != null) {
+      String[] split = line.split(";");
+
+      list.add(new Object[]{new ContactData().
+              withFirstname(split[0]).
+              withLastname(split[1]).
+              withAddress(split[2]).
+              withHomePhone(split[3]).
+              withEmail(split[4]).
+              withPhoto(photo)
+      });
+
+      line = reader.readLine();
+    }
+
     return list.iterator();
   }
+
   @Test(dataProvider = "validContacts")
   public void testContactCreation(ContactData contact) throws Exception {
 
@@ -65,7 +62,7 @@ public class ContactCreationTest extends TestBase {
             (before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
   }
 
-  @Test (enabled = false)
+  @Test(enabled = false)
   public void testCurrentDir() {
     File currentDir = new File(".");
     System.out.println(currentDir.getAbsolutePath());
