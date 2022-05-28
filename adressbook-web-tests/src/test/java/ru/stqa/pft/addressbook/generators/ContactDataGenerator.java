@@ -3,7 +3,9 @@ package ru.stqa.pft.addressbook.generators;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
+import com.thoughtworks.xstream.XStream;
 import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -17,6 +19,8 @@ public class ContactDataGenerator {
   public int count;
   @Parameter(names = "-f", description = "TargetFile")
   public String file;
+  @Parameter(names = "-d", description = "Data format")
+  public String format;
 
   public static void main(String[] args) throws IOException {
 
@@ -30,15 +34,50 @@ public class ContactDataGenerator {
       return;
     }
     generator.run();
-
-//    int count = Integer.parseInt(args[0]);
-//    File file = new File(args[1]);
   }
 
+  //----------------------------------------------------------------------------------------------------------------------
   private void run() throws IOException {
     List<ContactData> contacts = generateContacts(count);
-    save(contacts, new File(file));
+
+    if (format.equals("csv")){
+      saveAsCsv(contacts, new File(file));
+    }else if (format.equals("xml")){
+      saveAsXml(contacts, new File(file));
+    }else{
+      System.out.println("Unrecognized format for Contact's TestData"+ format);
+    }
   }
+  //-----------------------saveAsXml-------------------------
+  private void saveAsXml(List<ContactData> contacts, File file) throws IOException {
+    XStream xStream = new XStream();
+    xStream.processAnnotations(ContactData.class);
+    String xml = xStream.toXML(contacts);
+
+    Writer writer = new FileWriter(file);
+    writer.write(xml);
+
+    writer.close();
+  }
+  //-----------------------saveAsCsv--------------------------
+  private void saveAsCsv(List<ContactData> contacts, File file) throws IOException {
+    Writer writer = new FileWriter(file);
+
+    for (ContactData contact : contacts) {
+      writer.write(String.format(
+              "%s;%s;%s;%s;%s\n",
+
+              contact.getFirstname(),
+              contact.getLastname(),
+              contact.getAddress(),
+              contact.getHomePhone(),
+              contact.getEmail()
+
+      ));
+    }
+    writer.close();
+  }
+//--------------------------------------------------------------------------------------------------------------------
 
 
   private List<ContactData> generateContacts(int count) {
@@ -55,24 +94,6 @@ public class ContactDataGenerator {
       );
     }
     return contacts;
-  }
-
-  private void save(List<ContactData> contacts, File file) throws IOException {
-    Writer writer = new FileWriter(file);
-
-    for (ContactData contact : contacts) {
-      writer.write(String.format(
-              "%s;%s;%s;%s;%s\n",
-
-              contact.getFirstname(),
-              contact.getLastname(),
-              contact.getAddress(),
-              contact.getHomePhone(),
-              contact.getEmail()
-
-      ));
-    }
-    writer.close();
   }
 
 
