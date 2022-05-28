@@ -1,26 +1,23 @@
 <list>
-  <ru.stqa.pft.addressbook.model.ContactData>
-    <id>2147483647</id>
+  <Contact>
     <firstname>КонтИмяТест0</firstname>
     <lastname>КонтФамТест0</lastname>
     <address>Адрес0</address>
     <homePhone>000000</homePhone>
     <email>qwer0@ff.com</email>
-  </ru.stqa.pft.addressbook.model.ContactData>
-  <ru.stqa.pft.addressbook.model.ContactData>
-    <id>2147483647</id>
+  </Contact>
+  <Contact>
     <firstname>КонтИмяТест1</firstname>
     <lastname>КонтФамТест1</lastname>
     <address>Адрес1</address>
     <homePhone>000001</homePhone>
     <email>qwer1@ff.com</email>
-  </ru.stqa.pft.addressbook.model.ContactData>
-  <ru.stqa.pft.addressbook.model.ContactData>
-    <id>2147483647</id>
+  </Contact>
+  <Contact>
     <firstname>КонтИмяТест2</firstname>
     <lastname>КонтФамТест2</lastname>
     <address>Адрес2</address>
     <homePhone>000002</homePhone>
     <email>qwer2@ff.com</email>
-  </ru.stqa.pft.addressbook.model.ContactData>
+  </Contact>
 </list>
