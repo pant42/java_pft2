@@ -45,7 +45,7 @@ public class GroupCreationTest extends TestBase {
     Groups before = app.group().all();
 
     app.group().create(group);
-    
+
     assertEquals(app.group().count(), before.size() + 1);
     Groups after = app.group().all();
 
@@ -53,7 +53,7 @@ public class GroupCreationTest extends TestBase {
             before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
   }
 
-  @Test
+  @Test(enabled = false)
   public void testBadGroupCreation() throws Exception {
 
     app.group().gotoGroupPage();

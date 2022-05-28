@@ -67,7 +67,6 @@ public class GroupDataGenerator {
               group.getName(),
               group.getHeader(),
               group.getFooter()
-
       ));
     }
     writer.close();
