@@ -82,9 +82,9 @@ public class GroupDataGenerator {
     List<GroupData> groups = new ArrayList<GroupData>();
     for (int i = 0; i < count; i++) {
       groups.add(new GroupData().
-              withName(String.format("ххНеймТест%s", i)).
-              withHeader(String.format("ххХедерТест%s", i)).
-              withFooter(String.format("ххФутерТест%s", i))
+              withName(String.format("xname%s", i)).
+              withHeader(String.format("xheader%s", i)).
+              withFooter(String.format("xfooter%s", i))
 
       );
     }

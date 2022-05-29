@@ -35,7 +35,7 @@ public class ContactModificationTest extends TestBase {
             withId(modifiedContact.getId()).
             withFirstname("UPD").
             withLastname("UPD").
-            withAddress("UPD, область, город, улица, дом 5 кв 1").
+            withAddress("UPDAddress").
             withHomePhone("003456789").
             withEmail("00@in.ru").
             withGroup("[none]");

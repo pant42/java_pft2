@@ -30,9 +30,9 @@ public class GroupModificationTest extends TestBase {
 
     GroupData group = new GroupData().
             withId(modifiedGroup.getId()).
-            withName("ТестUPD").
-            withHeader("ТестUPD2").
-            withFooter("ТестUPD3");
+            withName("NameUPD").
+            withHeader("HeaderUPD2").
+            withFooter("FooterUPD3");
 
     app.group().modify(group);
 
