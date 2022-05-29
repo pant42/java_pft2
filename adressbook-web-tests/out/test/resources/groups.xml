@@ -1,17 +1,17 @@
 <list>
   <Group>
-    <name>ххНеймТест0</name>
-    <header>ххХедерТест0</header>
-    <footer>ххФутерТест0</footer>
+    <name>xname0</name>
+    <header>xheader0</header>
+    <footer>xfooter0</footer>
   </Group>
   <Group>
-    <name>ххНеймТест1</name>
-    <header>ххХедерТест1</header>
-    <footer>ххФутерТест1</footer>
+    <name>xname1</name>
+    <header>xheader1</header>
+    <footer>xfooter1</footer>
   </Group>
   <Group>
-    <name>ххНеймТест2</name>
-    <header>ххХедерТест2</header>
-    <footer>ххФутерТест2</footer>
+    <name>xname2</name>
+    <header>xheader2</header>
+    <footer>xfooter2</footer>
   </Group>
 </list>
