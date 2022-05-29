@@ -26,15 +26,19 @@ public class GroupCreationTest extends TestBase {
 
     // Для формата файла = CSV   List<Object[]> list = new ArrayList<Object[]>();
 
-    BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.xml")));
-    String xml = "";
-    String line = reader.readLine();
+    try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.xml")))) {
+      String xml = "";
+      String line = reader.readLine();
 
-    while (line != null) {
-      xml += line;
-      line = reader.readLine();
-    }
+      while (line != null) {
+        xml += line;
+        line = reader.readLine();
+      }
+
+
     /* Для формата файла = CSV
+    try(BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.csv")))){
+
       while (line != null) {
       String[] split = line.split(";");
       list.add(new Object[]{new GroupData().
@@ -47,12 +51,13 @@ public class GroupCreationTest extends TestBase {
     return list.iterator();
   }
 */
-    XStream xstream = new XStream();
-    xstream.allowTypes(new Class[]{GroupData.class});
-    xstream.processAnnotations(GroupData.class);
+      XStream xstream = new XStream();
+      xstream.allowTypes(new Class[]{GroupData.class});
+      xstream.processAnnotations(GroupData.class);
 
-    List<GroupData> groups = (List<GroupData>) xstream.fromXML(xml);
-    return groups.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+      List<GroupData> groups = (List<GroupData>) xstream.fromXML(xml);
+      return groups.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+    }
   }
 
 

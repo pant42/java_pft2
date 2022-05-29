@@ -40,42 +40,42 @@ public class ContactDataGenerator {
   private void run() throws IOException {
     List<ContactData> contacts = generateContacts(count);
 
-    if (format.equals("csv")){
+    if (format.equals("csv")) {
       saveAsCsv(contacts, new File(file));
-    }else if (format.equals("xml")){
+    } else if (format.equals("xml")) {
       saveAsXml(contacts, new File(file));
-    }else{
-      System.out.println("Unrecognized format for Contact's TestData"+ format);
+    } else {
+      System.out.println("Unrecognized format for Contact's TestData" + format);
     }
   }
+
   //-----------------------saveAsXml-------------------------
   private void saveAsXml(List<ContactData> contacts, File file) throws IOException {
     XStream xStream = new XStream();
     xStream.processAnnotations(ContactData.class);
     String xml = xStream.toXML(contacts);
 
-    Writer writer = new FileWriter(file);
-    writer.write(xml);
-
-    writer.close();
+    try (Writer writer = new FileWriter(file)) {
+      writer.write(xml);
+    }
   }
+
   //-----------------------saveAsCsv--------------------------
   private void saveAsCsv(List<ContactData> contacts, File file) throws IOException {
-    Writer writer = new FileWriter(file);
 
-    for (ContactData contact : contacts) {
-      writer.write(String.format(
-              "%s;%s;%s;%s;%s\n",
+    try (Writer writer = new FileWriter(file)) {
+      for (ContactData contact : contacts) {
+        writer.write(String.format(
+                "%s;%s;%s;%s;%s\n",
 
-              contact.getFirstname(),
-              contact.getLastname(),
-              contact.getAddress(),
-              contact.getHomePhone(),
-              contact.getEmail()
-
-      ));
+                contact.getFirstname(),
+                contact.getLastname(),
+                contact.getAddress(),
+                contact.getHomePhone(),
+                contact.getEmail()
+        ));
+      }
     }
-    writer.close();
   }
 //--------------------------------------------------------------------------------------------------------------------
 
@@ -85,9 +85,9 @@ public class ContactDataGenerator {
     List<ContactData> contacts = new ArrayList<ContactData>();
     for (int i = 0; i < count; i++) {
       contacts.add(new ContactData().
-              withFirstname(String.format("КонтИмяТест%s", i)).
-              withLastname(String.format("КонтФамТест%s", i)).
-              withAddress(String.format("Адрес%s", i)).
+              withFirstname(String.format("ххКонтИмяТест%s", i)).
+              withLastname(String.format("ххКонтФамТест%s", i)).
+              withAddress(String.format("ххАдрес%s", i)).
               withHomePhone(String.format("00000%s", i)).
               withEmail(String.format("qwer%s@ff.com", i))
 

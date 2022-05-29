@@ -40,39 +40,40 @@ public class GroupDataGenerator {
   private void run() throws IOException {
     List<GroupData> groups = generateGroups(count);
 
-    if (format.equals("csv")){
+    if (format.equals("csv")) {
       saveAsCsv(groups, new File(file));
-    }else if (format.equals("xml")){
+    } else if (format.equals("xml")) {
       saveAsXml(groups, new File(file));
-    }else{
-      System.out.println("Unrecognized format for group's TestData"+ format);
+    } else {
+      System.out.println("Unrecognized format for group's TestData" + format);
     }
   }
+
   //-----------------------saveAsXml-------------------------
   private void saveAsXml(List<GroupData> groups, File file) throws IOException {
     XStream xStream = new XStream();
     xStream.processAnnotations(GroupData.class);
     String xml = xStream.toXML(groups);
 
-    Writer writer = new FileWriter(file);
-    writer.write(xml);
-
-    writer.close();
+    try (Writer writer = new FileWriter(file)) {
+      writer.write(xml);
+    }
   }
+
   //-----------------------saveAsCsv--------------------------
   private void saveAsCsv(List<GroupData> groups, File file) throws IOException {
-    Writer writer = new FileWriter(file);
 
-    for (GroupData group : groups) {
-      writer.write(String.format(
-              "%s;%s;%s\n",
+    try (Writer writer = new FileWriter(file)) {
+      for (GroupData group : groups) {
+        writer.write(String.format(
+                "%s;%s;%s\n",
 
-              group.getName(),
-              group.getHeader(),
-              group.getFooter()
-      ));
+                group.getName(),
+                group.getHeader(),
+                group.getFooter()
+        ));
+      }
     }
-    writer.close();
   }
 //--------------------------------------------------------------------------------------------------------------------
 
@@ -81,9 +82,9 @@ public class GroupDataGenerator {
     List<GroupData> groups = new ArrayList<GroupData>();
     for (int i = 0; i < count; i++) {
       groups.add(new GroupData().
-              withName(String.format("НеймТест%s", i)).
-              withHeader(String.format("ХедерТест%s", i)).
-              withFooter(String.format("ФутерТест%s", i))
+              withName(String.format("ххНеймТест%s", i)).
+              withHeader(String.format("ххХедерТест%s", i)).
+              withFooter(String.format("ххФутерТест%s", i))
 
       );
     }
