@@ -1,22 +1,22 @@
 <list>
   <Contact>
-    <firstname>КонтИмяТест0</firstname>
-    <lastname>КонтФамТест0</lastname>
-    <address>Адрес0</address>
+    <firstname>ххКонтИмяТест0</firstname>
+    <lastname>ххКонтФамТест0</lastname>
+    <address>ххАдрес0</address>
     <homePhone>000000</homePhone>
     <email>qwer0@ff.com</email>
   </Contact>
   <Contact>
-    <firstname>КонтИмяТест1</firstname>
-    <lastname>КонтФамТест1</lastname>
-    <address>Адрес1</address>
+    <firstname>ххКонтИмяТест1</firstname>
+    <lastname>ххКонтФамТест1</lastname>
+    <address>ххАдрес1</address>
     <homePhone>000001</homePhone>
     <email>qwer1@ff.com</email>
   </Contact>
   <Contact>
-    <firstname>КонтИмяТест2</firstname>
-    <lastname>КонтФамТест2</lastname>
-    <address>Адрес2</address>
+    <firstname>ххКонтИмяТест2</firstname>
+    <lastname>ххКонтФамТест2</lastname>
+    <address>ххАдрес2</address>
     <homePhone>000002</homePhone>
     <email>qwer2@ff.com</email>
   </Contact>
