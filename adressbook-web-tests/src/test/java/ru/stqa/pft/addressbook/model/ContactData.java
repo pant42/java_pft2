@@ -2,31 +2,60 @@ package ru.stqa.pft.addressbook.model;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.io.File;
-
+@Entity
+@Table(name="addressbook")
 @XStreamAlias("Contact")
+
 public class ContactData {
+
   @XStreamOmitField
+  @Id
+  @Column(name="id")
   private int id = Integer.MAX_VALUE;
+
+  @Column(name="firstname")
   private String firstname;
+  @Column(name="lastname")
   private String lastname;
+
+  @Transient
   private String address;
 
+  @Column(name="home")
+  @Type(type = "text")
   private String homePhone;
+  @Column(name="mobile")
+  @Type(type = "text")
   private String mobilePhone;
+  @Column(name="work")
+  @Type(type = "text")
   private String workPhone;
+
+  @Type(type = "text")
   private String phone2;
 
+  @Type(type = "text")
   private String email;
+  @Type(type = "text")
   private String email2;
+  @Type(type = "text")
   private String email3;
+
+  @Transient
   private String group;
 
+  @Transient
   private String allPhones;
+  @Transient
   private String allEmails;
 
-  private File photo;
+  @Column(name="photo")
+  @Type(type = "text")
+  private String photo;
 
 
 //Сеттеры-------------------------------------------------
@@ -106,7 +135,7 @@ public class ContactData {
   }
 
   public ContactData withPhoto(File photo) {
-    this.photo = photo;
+    this.photo = photo.getPath();
     return this;
   }
 
@@ -172,7 +201,7 @@ public class ContactData {
   }
 
   public File getPhoto() {
-    return photo;
+    return new File (photo);
   }
 
   //-------------------------------------------------------
