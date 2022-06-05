@@ -1,23 +1,9 @@
 <list>
-  <Contact>
-    <firstname>xcname0</firstname>
-    <lastname>xclastname0</lastname>
-    <address>xaddress0</address>
-    <homePhone>000000</homePhone>
-    <email>qwer0@ff.com</email>
-  </Contact>
-  <Contact>
-    <firstname>xcname1</firstname>
-    <lastname>xclastname1</lastname>
-    <address>xaddress1</address>
-    <homePhone>000001</homePhone>
-    <email>qwer1@ff.com</email>
-  </Contact>
-  <Contact>
-    <firstname>xcname2</firstname>
-    <lastname>xclastname2</lastname>
-    <address>xaddress2</address>
-    <homePhone>000002</homePhone>
-    <email>qwer2@ff.com</email>
-  </Contact>
+    <Contact>
+        <firstname>xcname0</firstname>
+        <lastname>xclastname0</lastname>
+        <address>xaddress0</address>
+        <homePhone>000000</homePhone>
+        <email>qwer0@ff.com</email>
+    </Contact>
 </list>

@@ -1,17 +1,7 @@
 <list>
-  <Group>
-    <name>xname0</name>
-    <header>xheader0</header>
-    <footer>xfooter0</footer>
-  </Group>
-  <Group>
-    <name>xname1</name>
-    <header>xheader1</header>
-    <footer>xfooter1</footer>
-  </Group>
-  <Group>
-    <name>xname2</name>
-    <header>xheader2</header>
-    <footer>xfooter2</footer>
-  </Group>
+    <Group>
+        <name>xname0</name>
+        <header>xheader0</header>
+        <footer>xfooter0</footer>
+    </Group>
 </list>
