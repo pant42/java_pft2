@@ -14,7 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GroupDataGenerator {
-
+  //-f src/test/resources/groups.xml -c 50 -d xml
+  //C:\Learning\java_pft2\adressbook-web-tests
   @Parameter(names = "-c", description = "GroupCount")
   public int count;
   @Parameter(names = "-f", description = "TargetFile")
