@@ -15,30 +15,30 @@ public class GroupModificationTest extends TestBase {
 //Если нечего модифицировать - создай! как? вот тут и условие, надо ли создавать, как создавать, чем заполнить. Всё тут
 
   public void ensurePreconditions() {
-    app.goTo().groupPage();
 
-    if (!app.group().isThereAGroup()) {
-      app.group().create(new GroupData().withName("Тест2"));
+    if (app.db().groups().size()==0){
+      app.goTo().groupPage();
+      app.group().create(new GroupData().withName("ПрекондНетГруппы1"));
     }
   }
 
   @Test
   public void GroupModification() {
 
-    Groups before = app.group().all();
+    Groups before = app.db().groups();
     GroupData modifiedGroup = before.iterator().next();
 
     GroupData group = new GroupData().
             withId(modifiedGroup.getId()).
             withName("NameUPD").
-            withHeader("HeaderUPD2").
-            withFooter("FooterUPD3");
-
+            withHeader("HeaderUPD").
+            withFooter("FooterUPD");
+    app.goTo().groupPage();
     app.group().modify(group);
 
     assertEquals(app.group().count(), before.size());
 
-    Groups after = app.group().all();
+    Groups after = app.db().groups();
 
     assertThat(after, equalTo(before.without(modifiedGroup).withAdded(group)));
   }
