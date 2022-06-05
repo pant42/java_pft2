@@ -11,29 +11,30 @@ import javax.persistence.Table;
 
 @XStreamAlias("Group")
 @Entity
-@Table(name="group_list")
+@Table(name = "group_list")
 
 public class GroupData {
   @XStreamOmitField
   @Id
-  @Column(name="group_id")
-  private int id= Integer.MAX_VALUE;
+  @Column(name = "group_id")
+  private int id = Integer.MAX_VALUE;
 
-  @Column(name="group_name")
-  private  String name;
+  @Column(name = "group_name")
+  private String name;
 
-  @Column(name="group_header")
+  @Column(name = "group_header")
   @Type(type = "text")
-  private  String header;
+  private String header;
 
-  @Column(name="group_footer")
+  @Column(name = "group_footer")
   @Type(type = "text")
-  private  String footer;
+  private String footer;
 
   public GroupData withId(int id) {
     this.id = id;
     return this;
   }
+
   public GroupData withName(String name) {
     this.name = name;
     return this;

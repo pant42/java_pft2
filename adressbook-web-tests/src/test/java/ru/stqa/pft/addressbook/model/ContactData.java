@@ -6,59 +6,34 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.File;
+
 @Entity
-@Table(name="addressbook")
+@Table(name = "addressbook")
 @XStreamAlias("Contact")
 
 public class ContactData {
 
   @XStreamOmitField
   @Id
-  @Column(name="id")
+  @Column(name = "id")
   private int id = Integer.MAX_VALUE;
 
-  @Column(name="firstname")
+  @Column(name = "firstname")
   private String firstname;
-  @Column(name="lastname")
+  @Column(name = "lastname")
   private String lastname;
 
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-
-    ContactData that = (ContactData) o;
-
-    if (id != that.id) return false;
-    if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
-    if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
-    if (address != null ? !address.equals(that.address) : that.address != null) return false;
-    if (homePhone != null ? !homePhone.equals(that.homePhone) : that.homePhone != null) return false;
-    return email != null ? email.equals(that.email) : that.email == null;
-  }
-
-  @Override
-  public int hashCode() {
-    int result = id;
-    result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
-    result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
-    result = 31 * result + (address != null ? address.hashCode() : 0);
-    result = 31 * result + (homePhone != null ? homePhone.hashCode() : 0);
-    result = 31 * result + (email != null ? email.hashCode() : 0);
-    return result;
-  }
-
-  @Column(name="address")
+  @Column(name = "address")
   @Type(type = "text")
   private String address;
 
-  @Column(name="home")
+  @Column(name = "home")
   @Type(type = "text")
   private String homePhone;
-  @Column(name="mobile")
+  @Column(name = "mobile")
   @Type(type = "text")
   private String mobilePhone;
-  @Column(name="work")
+  @Column(name = "work")
   @Type(type = "text")
   private String workPhone;
 
@@ -80,7 +55,7 @@ public class ContactData {
   @Transient
   private String allEmails;
 
-  @Column(name="photo")
+  @Column(name = "photo")
   @Type(type = "text")
   private String photo;
 
@@ -210,6 +185,32 @@ public class ContactData {
   }
 
   @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+
+    ContactData that = (ContactData) o;
+
+    if (id != that.id) return false;
+    if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
+    if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
+    if (address != null ? !address.equals(that.address) : that.address != null) return false;
+    if (homePhone != null ? !homePhone.equals(that.homePhone) : that.homePhone != null) return false;
+    return email != null ? email.equals(that.email) : that.email == null;
+  }
+
+  @Override
+  public int hashCode() {
+    int result = id;
+    result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
+    result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
+    result = 31 * result + (address != null ? address.hashCode() : 0);
+    result = 31 * result + (homePhone != null ? homePhone.hashCode() : 0);
+    result = 31 * result + (email != null ? email.hashCode() : 0);
+    return result;
+  }
+
+  @Override
   public String toString() {
     return "ContactData{" +
             "id=" + id +
@@ -240,7 +241,7 @@ public class ContactData {
   }
 
   public File getPhoto() {
-    return new File (photo);
+    return new File(photo);
   }
 
 }
