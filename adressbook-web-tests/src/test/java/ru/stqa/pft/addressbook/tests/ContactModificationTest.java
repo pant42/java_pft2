@@ -14,12 +14,13 @@ public class ContactModificationTest extends TestBase {
   @BeforeMethod
 //Если нечего модифицировать - создай! как? вот тут и условие, надо ли создавать, как создавать, чем заполнить. Всё тут
   public void ensurePreconditions() {
-    app.goTo().homePage();
+    app.contact().gotoHomePage();
 
-    if (!app.contact().isThereAContact()) {
+    if (app.db().contacts().size() == 0) {
+      app.goTo().groupPage();
       app.contact().create(new ContactData().
-              withFirstname("ИмяЕслиНетМодифицировать").
-              withLastname("ФамилияЕслиНетМодифицировать")
+              withFirstname("МИмя").
+              withLastname("МФамилия")
       );
     }
   }
@@ -27,8 +28,8 @@ public class ContactModificationTest extends TestBase {
   @Test
   public void testContactModification() {
 
+    Contacts before = app.db().contacts();
 
-    Contacts before = app.contact().allCache();
     ContactData modifiedContact = before.iterator().next();
 
     ContactData contact = new ContactData().
@@ -44,7 +45,7 @@ public class ContactModificationTest extends TestBase {
 
     assertEquals(app.contact().count(), before.size());
 
-    Contacts after = app.contact().allCache();
+    Contacts after = app.db().contacts();
 
     assertThat(after, equalTo(before.without(modifiedContact).withAdded(contact)));
   }

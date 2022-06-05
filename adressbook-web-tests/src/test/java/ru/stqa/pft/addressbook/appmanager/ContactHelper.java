@@ -29,7 +29,7 @@ public class ContactHelper extends HelperBase {
     type(By.name("email"), contactData.getEmail());
     type(By.name("home"), contactData.getHomePhone());
 
-    attach(By.name("photo"), contactData.getPhoto());
+//    attach(By.name("photo"), contactData.getPhoto());
 
     if (creation) {
       if (contactData.getGroup() != null) {
@@ -87,7 +87,7 @@ public class ContactHelper extends HelperBase {
 
   public void modify(ContactData contact) {
     selectionContactById(contact.getId());
-    initContactModification();
+    initContactModificationById(contact.getId());
     fillContactForm(contact, false);
     submitContactModification();
     contactCache = null;
