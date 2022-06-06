@@ -4,7 +4,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.GroupData;
-import ru.stqa.pft.addressbook.model.Groups;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -36,7 +35,7 @@ public class AddInGroupContactTest extends TestBase {
     ContactData contact = app.db().contacts().iterator().next();
     GroupData group = app.db().groups().iterator().next();
     app.contact().contactInGroup(contact, group);
-    assertThat(app.db().getContactInGroup(contact.getId()).getGroups().contains(group), equalTo(true));
+    assertThat(app.db().getContactById(contact.getId()).getGroups().contains(group), equalTo(true));
 
     verifyContactListInUi();
   }

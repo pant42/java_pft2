@@ -46,13 +46,13 @@ public class AddOutGroupContactTest extends TestBase {
       app.goTo().homePage();
     }
 
-    ContactData new_contact = app.db().getContactInGroup(i);
+    ContactData new_contact = app.db().getContactById(i);
 
     Groups groupDelete = new_contact.getGroups();
 
     app.contact().contactRemoveGroup(new_contact);
 
-    assertThat(app.db().getContactInGroup(contact.getId()).getGroups().contains(groupDelete), equalTo(false));
+    assertThat(app.db().getContactById(contact.getId()).getGroups().contains(groupDelete), equalTo(false));
   }
 
 }
