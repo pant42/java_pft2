@@ -209,13 +209,15 @@ public class ContactHelper extends HelperBase {
             withEmail3(email3)
             ;
   }
-//-----Для добавления контакта в группу (ContactAddInGroupTest)
+
+  //-----Для добавления контакта в группу (ContactAddInGroupTest)
+
   public void selectContactById(int id) {
     wd.findElement(By.xpath("//*[@id=\"" + id + "\"]")).click();
   }
 
-  public void selectGroupForContact(ContactData contact,GroupData group) {
-    if(contact.getGroups().size() > 0)
+  public void selectGroupForContact(ContactData contact, GroupData group) {
+    if (contact.getGroups().size() > 0)
       Assert.assertTrue(contact.getGroups().size() == 1);
     new Select(wd.findElement(By.name("to_group")))
             .selectByVisibleText(group.getName());
@@ -227,7 +229,20 @@ public class ContactHelper extends HelperBase {
 
   public void contactInGroup(ContactData contact, GroupData group) {
     selectContactById(contact.getId());
-    selectGroupForContact(contact,group);
+    selectGroupForContact(contact, group);
     addInGroup();
   }
+
+  //-----Для удаления контакта из группы
+
+  public void contactRemoveGroup(ContactData contact) {
+    new Select(wd.findElement(By.name("group"))).selectByVisibleText(contact.getGroups().iterator().next().getName());
+    selectContactById(contact.getId());
+    removeToGroup();
+  }
+
+
+    private void removeToGroup() {
+      click(By.name("remove"));
+    }
 }
