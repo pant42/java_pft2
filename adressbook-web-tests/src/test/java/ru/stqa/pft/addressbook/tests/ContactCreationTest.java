@@ -13,6 +13,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -64,7 +65,7 @@ public class ContactCreationTest extends TestBase {
 
   @Test(dataProvider = "validContacts")
   public void testContactCreation(ContactData contact) throws Exception {
-    Groups groups = app.db().groups();
+
     Contacts before = app.db().contacts();
 
     app.contact().gotoHomePage();
