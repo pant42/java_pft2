@@ -23,12 +23,4 @@
     <email>qwer2@ff.com</email>
     <photo>src\test\resources\stru.png</photo>
   </Contact>
-  <Contact>
-    <firstname>xcname3</firstname>
-    <lastname>xclastname3</lastname>
-    <address>xaddress3</address>
-    <homePhone>000003</homePhone>
-    <email>qwer3@ff.com</email>
-    <photo>src\test\resources\stru.png</photo>
-  </Contact>
 </list>

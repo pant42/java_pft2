@@ -38,8 +38,7 @@ public class ContactModificationTest extends TestBase {
             withLastname("UPD").
             withAddress("UPDAddress").
             withHomePhone("003456789").
-            withEmail("00@in.ru").
-            withGroup("[none]");
+            withEmail("00@in.ru");
 
     app.contact().modify(contact);
 
