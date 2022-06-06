@@ -3,8 +3,6 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
@@ -32,14 +30,18 @@ public class ContactHelper extends HelperBase {
 //    attach(By.name("photo"), contactData.getPhoto());
 
 
-    if (creation) {/*
-      if (contactData.getGroup() != null) {
-        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-      }*/
+/*    if (creation) {
+      if (contactData.getGroups().size() > 0) {
+        Assert.assertTrue(contactData.getGroups().size() == 1);
+
+        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
+      }
     } else {
       Assert.assertFalse(isElementPresent(By.name("new_group")));
     }
+*/
   }
+
 
   public void initContactCreation() {
     click(By.linkText("add new"));
@@ -61,10 +63,6 @@ public class ContactHelper extends HelperBase {
     wd.switchTo().alert().accept();
   }
 
-  public void initContactModification() {
-    click(By.xpath("//img[@alt='Edit']"));
-  }
-
   public void initContactModificationById(int id) {
     WebElement checkbox = wd.findElement(By.cssSelector(String.format("input[value='%s']", id)));
     WebElement row = checkbox.findElement(By.xpath("./../.."));
@@ -79,6 +77,7 @@ public class ContactHelper extends HelperBase {
 
   //Святая троица функций для создания/модификации/удаления, которые были сформированы для красивого внешнего вида тестов
   public void create(ContactData contact) {
+
     initContactCreation();
     fillContactForm(contact, true);
     submitContactCreation();
