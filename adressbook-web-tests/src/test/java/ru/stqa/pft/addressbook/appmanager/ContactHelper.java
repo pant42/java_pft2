@@ -15,6 +15,11 @@ import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
+  public ContactData getContactNoneGroup ;{
+
+  }
+
+
   public ContactHelper(WebDriver wd) {
     super(wd);
   }
@@ -128,8 +133,14 @@ public class ContactHelper extends HelperBase {
       String allPhones = element.findElement(By.xpath("td[6]")).getText();
       String allEmails = element.findElement(By.xpath("td[5]")).getText();
       String address = element.findElement(By.xpath("td[4]")).getText();
-      contactCache.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname)
-              .withAllPhones(allPhones).withAllEmails(allEmails).withAddress(address));
+      contactCache.add(new ContactData().
+              withId(id).
+              withFirstname(firstname).
+              withLastname(lastname).
+              withAllPhones(allPhones).
+              withAllEmails(allEmails).
+              withAddress(address)
+      );
     }
     return new Contacts(contactCache);
   }
@@ -245,4 +256,10 @@ public class ContactHelper extends HelperBase {
     private void removeToGroup() {
       click(By.name("remove"));
     }
+
+  public void showContactsNoneGroup() {
+
+    wd.findElement(By.name("group")).click();
+    new Select(wd.findElement(By.name("group"))).selectByVisibleText("[none]");
+  }
 }

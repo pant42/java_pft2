@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.util.Set;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -28,13 +30,36 @@ public class AddInGroupContactTest extends TestBase {
               withEmail("zz@mi.ru")
       );
     }
+
+    app.contact().showContactsNoneGroup();
+    Set<ContactData> contactsWithoutGroup = app.contact().all();
+    if (contactsWithoutGroup.size() == 0) {
+      app.contact().create(new ContactData().
+              withFirstname("cwgName").
+              withLastname("cwgLName").
+              withAddress("cwgAdr").
+              withHomePhone("8800").
+              withEmail("zz@mi.ru")
+      );
+    }
   }
+
 
   @Test
   public void testAddInGroupContact() {
-    ContactData contact = app.db().contacts().iterator().next();
+
+    app.contact().showContactsNoneGroup();
+    Set<ContactData> contactsWithoutGroup = app.contact().all();
+
+    ContactData contactNoneGroup = contactsWithoutGroup.iterator().next();
+
+    int id = contactNoneGroup.getId();
+
+    ContactData contact = app.db().getContactById(id);
+
     GroupData group = app.db().groups().iterator().next();
     app.contact().contactInGroup(contact, group);
+
     assertThat(app.db().getContactById(contact.getId()).getGroups().contains(group), equalTo(true));
 
     verifyContactListInUi();
