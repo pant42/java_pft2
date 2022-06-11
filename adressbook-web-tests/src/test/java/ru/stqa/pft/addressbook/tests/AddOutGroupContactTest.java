@@ -39,10 +39,10 @@ public class AddOutGroupContactTest extends TestBase {
     ContactData contact = app.db().contacts().iterator().next();
     int i = contact.getId();
 
-    if(contact.getGroups().size() == 0){
+    if (contact.getGroups().size() == 0) {
 
       GroupData new_group = app.db().groups().iterator().next();
-      app.contact().contactInGroup(contact,new_group);
+      app.contact().contactInGroup(contact, new_group);
       app.goTo().homePage();
     }
 

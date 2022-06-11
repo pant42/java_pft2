@@ -13,6 +13,12 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactPhoneEmailTest extends TestBase {
 
+  public static String cleaned(String phone) {
+    return phone.
+            replaceAll("\\s", "").
+            replaceAll("[-()]", "");
+  }
+
   @BeforeMethod
 //Если нечего модифицировать - создай! как? вот тут и условие, надо ли создавать, как создавать, чем заполнить. Всё тут
 
@@ -63,12 +69,6 @@ public class ContactPhoneEmailTest extends TestBase {
             .stream().filter((s) -> !s.equals("")).
             map(ContactPhoneEmailTest::cleaned).
             collect(Collectors.joining("\n"));
-  }
-
-  public static String cleaned(String phone) {
-    return phone.
-            replaceAll("\\s", "").
-            replaceAll("[-()]", "");
   }
 
 

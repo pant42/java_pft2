@@ -15,11 +15,6 @@ import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
-  public ContactData getContactNoneGroup ;{
-
-  }
-
-
   public ContactHelper(WebDriver wd) {
     super(wd);
   }
@@ -35,14 +30,14 @@ public class ContactHelper extends HelperBase {
     type(By.name("email"), contactData.getEmail());
     type(By.name("home"), contactData.getHomePhone());
 
-//    attach(By.name("photo"), contactData.getPhoto());
+    //attach(By.name("photo"), contactData.getPhoto());
 
 
-//Для теста как в лекции 7.6:
+    //Для теста как в лекции 7.6:
     if (creation) {
 
       if (contactData.getGroups().size() > 0) {
-        Assert.assertTrue(contactData.getGroups().size() == 1);
+        Assert.assertEquals(contactData.getGroups().size(), 1);
 
         new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
       }
@@ -84,10 +79,8 @@ public class ContactHelper extends HelperBase {
     click(By.xpath("//div[@id='content']/form/input[22]"));
   }
 
-
-  //Святая троица функций для создания/модификации/удаления, которые были сформированы для красивого внешнего вида тестов
+  //-------------------------------------------------------
   public void create(ContactData contact) {
-
     initContactCreation();
     fillContactForm(contact, true);
     submitContactCreation();
@@ -111,12 +104,13 @@ public class ContactHelper extends HelperBase {
     contactCache = null;
     gotoHomePage();
   }
-//-------------------------------------------------------
+  //-------------------------------------------------------
 
   public boolean isThereAContact() {
     return isElementPresent(By.name("selected[]"));
   }
 
+  //-------------------------------------------------------
   private Contacts contactCache = null;
 
   public Contacts allCache() {
@@ -144,10 +138,10 @@ public class ContactHelper extends HelperBase {
     }
     return new Contacts(contactCache);
   }
-
+  //-------------------------------------------------------
 
   public Set<ContactData> all() {
-    Set<ContactData> contacts = new HashSet<ContactData>();
+    Set<ContactData> contacts = new HashSet<>();
     List<WebElement> rows = wd.findElements(By.name("entry"));
 
     for (WebElement row : rows) {
@@ -178,6 +172,7 @@ public class ContactHelper extends HelperBase {
     return contacts;
   }
 
+  //-------------------------------------------------------
   public int count() {
     return wd.findElements(By.name("selected[]")).size();
   }
@@ -229,7 +224,7 @@ public class ContactHelper extends HelperBase {
 
   public void selectGroupForContact(ContactData contact, GroupData group) {
     if (contact.getGroups().size() > 0)
-      Assert.assertTrue(contact.getGroups().size() == 1);
+      Assert.assertEquals(contact.getGroups().size(), 1);
     new Select(wd.findElement(By.name("to_group")))
             .selectByVisibleText(group.getName());
   }
@@ -253,9 +248,9 @@ public class ContactHelper extends HelperBase {
   }
 
 
-    private void removeToGroup() {
-      click(By.name("remove"));
-    }
+  private void removeToGroup() {
+    click(By.name("remove"));
+  }
 
   public void showContactsNoneGroup() {
 

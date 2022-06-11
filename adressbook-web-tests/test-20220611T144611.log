@@ -1,0 +1,9 @@
+246  [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\panti\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml"
+379  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE ConnectionDbTest.testConnectionDb()[pri:0, instance:ru.stqa.pft.addressbook.tests.ConnectionDbTest@22e357dc] -1792471811
+379  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+382  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+382  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+382  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+386  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\panti\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml
+

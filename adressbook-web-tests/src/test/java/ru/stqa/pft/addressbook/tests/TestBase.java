@@ -21,12 +21,9 @@ import java.util.stream.Collectors;
 
 public class TestBase {
 
-  Logger logger = LoggerFactory.getLogger(TestBase.class);
-
-
   protected static final ApplicationManager app
           = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
-
+  Logger logger = LoggerFactory.getLogger(TestBase.class);
 
   @BeforeSuite(alwaysRun = true)
   protected void setUp() throws Exception {
@@ -77,11 +74,11 @@ public class TestBase {
       MatcherAssert.assertThat(uiContacts, CoreMatchers.equalTo(
 //Сравниваем uiGroups с dbGroups которые потоком преобразованы из групп с полным набором атрибутов в группы без хедера и футера (равным по-умолчанию null)
               dbContacts.stream().map((c) -> new ContactData().
-              /*У меня сравнение в TestBase идет по этим полям. Если вдруг нужно расширить кол-во полей для сравнения:
-              -Перегенерируем Equals and HashSet-ы на поля, которые потребуются;
-              -Так же, ToString Пересоздадим, там же
-              -Генератор тестданных дополняем требуемыми полями, а так же, изменим метод для заполнения формы (fillContactForm) */
-                      withId(c.getId()).
+                      /*У меня сравнение в TestBase идет по этим полям. Если вдруг нужно расширить кол-во полей для сравнения:
+                      -Перегенерируем Equals and HashSet-ы на поля, которые потребуются;
+                      -Так же, ToString Пересоздадим, там же
+                      -Генератор тестданных дополняем требуемыми полями, а так же, изменим метод для заполнения формы (fillContactForm) */
+                              withId(c.getId()).
                       withFirstname(c.getFirstname()).
                       withLastname(c.getLastname()).
                       withAddress(c.getAddress()).
