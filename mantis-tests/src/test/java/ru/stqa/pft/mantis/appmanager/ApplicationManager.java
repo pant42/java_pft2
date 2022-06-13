@@ -50,6 +50,13 @@ public class ApplicationManager {
     }
     return registrationHelper;
   }
+  private FtpHelper ftp;
+  public FtpHelper ftp() {
+    if (ftp == null) {
+      ftp = new FtpHelper(this);
+    }
+    return ftp;
+  }
 
   public WebDriver getDriver() {
     if (wd == null) {
@@ -61,7 +68,7 @@ public class ApplicationManager {
         wd = new InternetExplorerDriver();
       }
       wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
-      wd.get(properties.getProperty("web.baseUrl"));
+      wd.get(properties.getProperty("web.baseURL"));
     }
     return wd;
   }

@@ -8,6 +8,7 @@ import java.io.IOException;
 import static org.testng.AssertJUnit.assertTrue;
 
 public class LoginTests extends TestBase {
+
   @Test
   public void testLogin() throws IOException {
     HttpSession session = app.newSession();
