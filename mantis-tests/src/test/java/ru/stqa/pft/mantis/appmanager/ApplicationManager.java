@@ -18,7 +18,9 @@ public class ApplicationManager {
 
   private String browser;
   private RegistrationHelper registrationHelper;
+  private FtpHelper ftp;
   private MailHelper mailHelper;
+
 
   public ApplicationManager(String browser) {
     this.browser = browser;
@@ -26,7 +28,6 @@ public class ApplicationManager {
   }
 
   public void init() throws IOException {
-
     String target = System.getProperty("target", "local");
     properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
   }
@@ -41,7 +42,7 @@ public class ApplicationManager {
     return new HttpSession(this);
   }
 
-  public Object getProperty(String key) {
+  public String getProperty(String key) {
     return properties.getProperty(key);
   }
 
@@ -51,7 +52,7 @@ public class ApplicationManager {
     }
     return registrationHelper;
   }
-  private FtpHelper ftp;
+
   public FtpHelper ftp() {
     if (ftp == null) {
       ftp = new FtpHelper(this);

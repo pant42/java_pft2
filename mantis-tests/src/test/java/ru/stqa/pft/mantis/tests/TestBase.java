@@ -13,17 +13,16 @@ public class TestBase {
           = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
 
 
-  @BeforeSuite(alwaysRun = true)
-  protected void setUp() throws Exception {
+  @BeforeSuite
+  public void setUp() throws Exception {
     app.init();
-    app.ftp().upload(new File("src/test/resources/config_inc.php"), "config_inc.php", "config_inc.php.bak");
+    app.ftp().upload(new File("src/test/resources/config_defaults_inc.php"), "config_defaults_inc.php", "config_defaults_inc.php.bak");
   }
 
   @AfterSuite(alwaysRun = true)
   public void tearDown() throws Exception {
-    app.ftp().restore("config_inc.php.bak", "config_inc.php");
+    app.ftp().restore("config_defaults_inc.php.bak", "config_defaults_inc.php");
     app.stop();
-
   }
 
 }
