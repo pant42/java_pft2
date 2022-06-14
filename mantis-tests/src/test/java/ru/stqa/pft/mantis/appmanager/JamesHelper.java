@@ -13,11 +13,11 @@ import java.util.stream.Collectors;
 
 public class JamesHelper {
 
-  private ApplicationManager app;
-  private TelnetClient telnet;
+  private final ApplicationManager app;
+  private final TelnetClient telnet;
   private InputStream in;
   private PrintStream out;
-  private Session mailSession;
+  private final Session mailSession;
   private Store store;
   private String mailserver;
 
@@ -25,6 +25,18 @@ public class JamesHelper {
     this.app = app;
     telnet = new TelnetClient();
     mailSession = Session.getDefaultInstance(System.getProperties());
+  }
+
+  public static MailMessage toModelMail(Message m) {
+    try {
+      return new MailMessage(m.getAllRecipients()[0].toString(), (String) m.getContent());
+    } catch (MessagingException e) {
+      e.printStackTrace();
+      return null;
+    } catch (IOException e) {
+      e.printStackTrace();
+      return null;
+    }
   }
 
   public boolean doesUserExist(String name) {
@@ -153,18 +165,6 @@ public class JamesHelper {
     List<MailMessage> messages = Arrays.asList(inbox.getMessages()).stream().map((m) -> toModelMail(m)).collect(Collectors.toList());
     closeFolder(inbox);
     return messages;
-  }
-
-  public static MailMessage toModelMail(Message m) {
-    try {
-      return new MailMessage(m.getAllRecipients()[0].toString(), (String) m.getContent());
-    } catch (MessagingException e) {
-      e.printStackTrace();
-      return null;
-    } catch (IOException e) {
-      e.printStackTrace();
-      return null;
-    }
   }
 
 }

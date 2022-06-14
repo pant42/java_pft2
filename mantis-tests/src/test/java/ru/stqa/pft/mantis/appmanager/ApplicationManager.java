@@ -13,10 +13,9 @@ import java.time.Duration;
 import java.util.Properties;
 
 public class ApplicationManager {
-  private WebDriver wd;
   private final Properties properties;
-
-  private String browser;
+  private WebDriver wd;
+  private final String browser;
   private RegistrationHelper registrationHelper;
   private FtpHelper ftp;
   private MailHelper mailHelper;
@@ -95,7 +94,7 @@ public class ApplicationManager {
   }
 
   public UserHelper userHelper() {
-    if (userHelper == null){
+    if (userHelper == null) {
       userHelper = new UserHelper(this);
     }
     return userHelper;

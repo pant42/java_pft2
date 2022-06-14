@@ -14,14 +14,13 @@ public class RegistrationHelper extends HelperBase {
     type(By.name("username"), username);
     type(By.name("email"), email);
     click(By.cssSelector("input[type = 'submit'"));
-    //click(By.xpath("//*[@id=\"signup-form\"]/fieldset/span[2]/input"));
+
   }
 
   public void finish(String confirmationLink, String password) {
     wd.get(confirmationLink);
     type(By.name("password"), password);
     type(By.name("password_confirm"), password);
-    //click(By.cssSelector("#login-box > div > div > div:nth-child(6) > a"));
     click(By.xpath("//*[@id=\"account-update-form\"]/fieldset/span/button/span"));
   }
 }

@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 public class RegistrationTests extends TestBase {
 
-@BeforeMethod
+  @BeforeMethod
   public void startMailServer() {
     app.mail().start();
   }
@@ -34,7 +34,7 @@ public class RegistrationTests extends TestBase {
     //---Либо встроенный почтовый сервис, либо внешний (James):
 
     //---Встроенный почтовый сервис:
- List<MailMessage> mailMessages = app.mail().waitForMail(2, 10000);
+    List<MailMessage> mailMessages = app.mail().waitForMail(2, 10000);
 
     //---внешний почтовый сервис (James):
     //List<MailMessage> mailMessages = app.james().waitForMail(user, password, 60000);
@@ -54,7 +54,7 @@ public class RegistrationTests extends TestBase {
     return regex.getText(mailMessage.text);
   }
 
-@AfterMethod(alwaysRun = true)
+  @AfterMethod(alwaysRun = true)
   public void stopMailServer() {
     app.mail().stop();
   }
