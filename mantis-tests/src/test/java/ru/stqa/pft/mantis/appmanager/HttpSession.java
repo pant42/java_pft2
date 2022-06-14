@@ -34,7 +34,7 @@ public class HttpSession {
     post.setEntity(new UrlEncodedFormEntity(params));
     CloseableHttpResponse response = httpclient.execute(post);
     String body = getTextFrom(response);
-    return body.contains(String.format("<span id=\"logged-in-user\">%s</span>", username));
+    return body.contains(String.format("/mantisbt-2.25.4/account_page.php\">%s</a>",username));
   }
 
   private String getTextFrom(CloseableHttpResponse response) throws IOException {
@@ -49,7 +49,7 @@ public class HttpSession {
     HttpGet get = new HttpGet(app.getProperty("web.baseURL") + "/my_view_page.php");
     CloseableHttpResponse response = httpclient.execute(get);
     String body = getTextFrom(response);
-    return  body.contains(String.format("<span id=\"logged-in-user\">%s</span>",username));
+    return  body.contains(String.format("/mantisbt-2.25.4/account_page.php\">%s</a>",username));
   }
 
 }
