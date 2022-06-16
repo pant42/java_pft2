@@ -1,0 +1,1363 @@
+237  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 339804260
+238  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+240  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+240  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+240  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+241  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.tearDown()[pri:0, instance:null] -1911558885
+241  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+241  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+242  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+242  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+245  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE ResetPasswordUsersTests.startMailServer()[pri:0, instance:null] -1460941423
+245  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+245  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+245  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+245  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+245  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE ResetPasswordUsersTests.stopMailServer()[pri:0, instance:null] -1588657679
+245  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+245  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+245  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+245  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+246  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:ru.stqa.pft.mantis.tests.ResetPasswordUsersTests@6bffbc6d] -539047799
+246  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+247  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+247  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+247  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+247  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE ResetPasswordUsersTests.testResetPassword()[pri:0, instance:ru.stqa.pft.mantis.tests.ResetPasswordUsersTests@6bffbc6d] 684524984
+247  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+247  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+247  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+247  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+248  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.tearDown()[pri:0, instance:ru.stqa.pft.mantis.tests.ResetPasswordUsersTests@6bffbc6d] -1611828558
+248  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+248  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+248  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+248  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+269  [Test worker] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+280  [Test worker] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+281  [Test worker] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+284  [Test worker] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+298  [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.8.Final
+301  [Test worker] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+457  [Test worker] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+457  [Test worker] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+460  [Test worker] DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+632  [Test worker] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+642  [Test worker] DEBUG o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+642  [Test worker] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+655  [Test worker] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+679  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@5c645b43
+679  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@5c645b43
+679  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@5c645b43
+680  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@3c0036b
+680  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@78e89bfe
+680  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@15cea7b0
+681  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@63ec445c
+681  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@63ec445c
+681  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@63ec445c
+682  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@48b22fd4
+682  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@48b22fd4
+682  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@48b22fd4
+682  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@73ab3aac
+682  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@73ab3aac
+682  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@73ab3aac
+683  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@59429fac
+683  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@59429fac
+683  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@59429fac
+684  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@5e4fa1da
+684  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@5e4fa1da
+684  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5e4fa1da
+685  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@66ba7e45
+685  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@66ba7e45
+685  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@66ba7e45
+685  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7573e12f
+685  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7573e12f
+685  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7573e12f
+686  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1b005a0b
+686  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1b005a0b
+686  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@257cc1fc
+687  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@257cc1fc
+687  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@61c76850
+687  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@61c76850
+687  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@121c54fa
+688  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@5dbf5634
+688  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@545607f2
+688  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@545607f2
+689  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@12f8b1d8
+689  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@12f8b1d8
+690  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@127f9161
+690  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@127f9161
+691  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1ba05e38
+691  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1ba05e38
+691  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@2c306a57
+691  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@2c306a57
+692  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@5b94ccbc
+692  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@5b94ccbc
+692  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3ac04654
+693  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3ac04654
+693  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@562457e1
+693  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@562457e1
+694  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3721177d
+695  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3721177d
+695  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@1f38957
+696  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1f38957
+696  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@57ce634f
+696  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@57ce634f
+697  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@4a6c18ad
+697  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4a6c18ad
+697  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4a6c18ad
+698  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@64aad6db
+699  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@4dafba3e
+699  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4dafba3e
+699  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4dafba3e
+699  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3d43fe
+700  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@16c8b7bd
+700  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@5a8ba37c
+700  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@5a8ba37c
+701  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@7e75bf2d
+701  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@7e75bf2d
+702  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@9a2ec9b
+702  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@9a2ec9b
+702  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@6a84bc3f
+702  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6a84bc3f
+703  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6e1d4137
+703  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6e1d4137
+703  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5327a06e
+704  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@2e34384c
+704  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@2e34384c
+704  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@2e34384c
+705  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@3fa76c61
+705  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@3fa76c61
+705  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@3fa76c61
+705  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@7b3315a5
+705  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@540dbda9
+706  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@545e57d7
+706  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@545e57d7
+706  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@545e57d7
+707  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@29c2c826
+707  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@29c2c826
+707  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@29c2c826
+707  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@2ba33e2c
+707  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@6dcd5639
+708  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@42fcc7e6
+708  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@42fcc7e6
+708  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5ce4369b
+709  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@1a3e5f23
+709  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1a3e5f23
+710  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@e344ad3
+710  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@e344ad3
+710  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4f8b4bd0
+711  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@597f48df
+711  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@314ed053
+713  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@31c2affc
+713  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@31c2affc
+714  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@7c4fc2bf
+714  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7772054c
+714  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2f61f937
+714  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@46866946
+714  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@44de0113
+714  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@236134a1
+714  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@369c9bb
+714  [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@76d05cc9
+736  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+737  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+737  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+737  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+737  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+738  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+738  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+739  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+739  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+740  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+740  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+740  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+740  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+741  [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+744  [Test worker] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+749  [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/bugtracker]
+749  [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=, user=root}
+750  [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+752  [Test worker] DEBUG o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+752  [Test worker] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+882  [Test worker] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.5.5-10.4.24-MariaDB
+      major : 5
+      minor : 5
+882  [Test worker] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.28 (Revision: 7ff2161da3899f379fb3171b6538b191b1c5c7e2)
+      major : 8
+      minor : 0
+882  [Test worker] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+891  [Test worker] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+902  [Test worker] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+903  [Test worker] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+917  [Test worker] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@435e60ff] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@17d32e9b]
+943  [Test worker] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+953  [Test worker] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: ru.stqa.pft.mantis.model.UserData
+967  [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+971  [Test worker] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name UserData
+973  [Test worker] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity ru.stqa.pft.mantis.model.UserData on table mantis_user_table
+986  [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(mantis_user_table), mappingColumn=id, insertable=true, updatable=true, unique=false}
+989  [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.mantis.model.UserData] is safe
+989  [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.mantis.model.UserData
+989  [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+990  [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.mantis.model.UserData:id]
+992  [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+993  [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+996  [Test worker] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, assigned, , ...)
+996  [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(mantis_user_table), mappingColumn=email, insertable=true, updatable=true, unique=false}
+996  [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email with lazy=false
+996  [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.mantis.model.UserData:email]
+996  [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for email
+996  [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property email
+996  [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(mantis_user_table), mappingColumn=password, insertable=true, updatable=true, unique=false}
+996  [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property password with lazy=false
+996  [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.mantis.model.UserData:password]
+997  [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for password
+997  [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property password
+997  [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(mantis_user_table), mappingColumn=username, insertable=true, updatable=true, unique=false}
+997  [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property username with lazy=false
+997  [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.mantis.model.UserData:username]
+997  [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for username
+997  [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property username
+1002 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+1002 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for email
+1002 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for password
+1002 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for username
+1003 [Test worker] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [mantis_user_table]
+1030 [Test worker] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: 2
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Second-level cache: disabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: null
+1031 [Test worker] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - Connection release mode: AFTER_TRANSACTION
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - JPA compliance - query : disabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - JPA compliance - closed-handling : disabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - JPA compliance - lists : disabled
+1032 [Test worker] DEBUG org.hibernate.cfg.Settings - JPA compliance - transactions : disabled
+1068 [Test worker] DEBUG o.h.s.i.SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+1069 [Test worker] DEBUG o.h.s.i.SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+1079 [Test worker] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+1079 [Test worker] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {dialect=org.hibernate.dialect.MySQLDialect, java.specification.version=17, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.MySQLDialect, org.gradle.test.worker=13, java.class.path=C:\\Users\\panti\\.gradle\\caches\\7.4\\workerMain\\gradle-worker.jar;C:\\Learning\\java_pft2\\mantis-tests\\build\\classes\\java\\test;C:\\Learning\\java_pft2\\mantis-tests\\build\\resources\\test;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.testng\\testng\\7.5\\1416a607fae667c14e390b484e8d02b5824c0674\\testng-7.5.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-java\\4.1.4\\d1ff6102a8b23729b967406ea85f40fea5a2e970\\selenium-java-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.hamcrest\\java-hamcrest\\2.0.0.0\\f1c8853ade0ecf707f5a261c830e98893983813\\java-hamcrest-2.0.0.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\commons-net\\commons-net\\3.8.0\\63ea56587c8aaf05adab5cb0397e056bac8a2db0\\commons-net-3.8.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.httpcomponents\\httpclient\\4.5.13\\e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada\\httpclient-4.5.13.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.subethamail\\subethasmtp\\3.1.7\\41381242daa11113c32da5b25d001bfdf4df53fb\\subethasmtp-3.1.7.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\ru.lanwen.verbalregex\\java-verbal-expressions\\1.8\\eb1605d81393d1c21085ced831fa5bf4b06ff19a\\java-verbal-expressions-1.8.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-classic\\1.3.0-alpha14\\d6d9131833240d460901d0e2a991e1a62db171a4\\logback-classic-1.3.0-alpha14.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\mysql\\mysql-connector-java\\8.0.28\\33678b1729d4f832b9e4bcb2d5bbd67940920a7a\\mysql-connector-java-8.0.28.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.hibernate\\hibernate-core\\5.6.8.Final\\bb775500aff700151b9daa3b4d9de781245d39e6\\hibernate-core-5.6.8.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-chrome-driver\\4.1.4\\68af859b6ebb156c53ab8e54c0f130a6813b4973\\selenium-chrome-driver-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-devtools-v100\\4.1.4\\37837b48286353437adeaf084860a7adeb485782\\selenium-devtools-v100-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-devtools-v101\\4.1.4\\cad0f16567048d507d9ca1fa12176bfea8957575\\selenium-devtools-v101-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-firefox-driver\\4.1.4\\eb04a522ccfd9e91f80a593dd07276f187a49bb\\selenium-firefox-driver-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-devtools-v85\\4.1.4\\627f9ea27c505032abb04b480aed5462e3a24182\\selenium-devtools-v85-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-devtools-v99\\4.1.4\\efbdac8d0865f10ad26e45533e46be766dedf980\\selenium-devtools-v99-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-edge-driver\\4.1.4\\3f216e94ed0f71d4a96b4df0880cff1c194d9b02\\selenium-edge-driver-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-ie-driver\\4.1.4\\de2e3bfb254f1b0972b1026087fe5b6b6b0e2bed\\selenium-ie-driver-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-opera-driver\\4.1.4\\515b2c05e90cd37952a626604cdb1fd1185d4760\\selenium-opera-driver-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-safari-driver\\4.1.4\\d882231dd0a27954a4c1ba627c28b5880edcc6e0\\selenium-safari-driver-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-support\\4.1.4\\8aa95743eb0f5233e7f9634ee45dfbfd7d0ca9b1\\selenium-support-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-chromium-driver\\4.1.4\\963a217eed29f23fcf4ab6958ffb0bdb465c0997\\selenium-chromium-driver-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-remote-driver\\4.1.4\\dfe2fc3aeff186f9ae5d1f8b739a2d330b3e7b1c\\selenium-remote-driver-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.google.auto.service\\auto-service\\1.0.1\\c9779f7372192a96c957a3df1faeeabd07881085\\auto-service-1.0.1.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-http\\4.1.4\\3d291d9f6749990ae543e49636d41ffd7108be16\\selenium-http-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.google.auto\\auto-common\\1.2\\ca270191fd7d2a7297da7c8f29184206df10c67d\\auto-common-1.2.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.google.guava\\guava\\31.1-jre\\60458f877d055d0c9114d9e1a2efb737b4bc282c\\guava-31.1-jre.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.findbugs\\jsr305\\3.0.2\\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\\jsr305-3.0.2.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.asynchttpclient\\async-http-client\\2.12.3\\6dfc91814cc8b3bc3327246d0e5df36911b9a623\\async-http-client-2.12.3.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.asynchttpclient\\async-http-client-netty-utils\\2.12.3\\ad99d8622931ed31367d0fef7fa17eb62e033fb3\\async-http-client-netty-utils-2.12.3.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\2.0.0-alpha5\\241721b0e0ef3cd6cf584b8f0e24d24ea80799ea\\slf4j-api-2.0.0-alpha5.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.beust\\jcommander\\1.82\\a7c5fef184d238065de38f81bbc6ee50cca2e21\\jcommander-1.82.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.webjars\\jquery\\3.5.1\\2392938e374f561c27c53872bdc9b6b351b6ba34\\jquery-3.5.1.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-json\\4.1.4\\d6b50de970b3cf420fdd58b656c500745202da85\\selenium-json-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.seleniumhq.selenium\\selenium-api\\4.1.4\\b246fcd2411c2c9b7209077d9b47971ef9d4fefd\\selenium-api-4.1.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.httpcomponents\\httpcore\\4.4.13\\853b96d3afbb7bf8cc303fe27ee96836a10c1834\\httpcore-4.4.13.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\commons-logging\\commons-logging\\1.2\\4bfc12adfe4842bf07b657f0369c4cb522955686\\commons-logging-1.2.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\commons-codec\\commons-codec\\1.11\\3acb4705652e16236558f0f4f2192cc33c3bd189\\commons-codec-1.11.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\javax.mail\\mail\\1.4.4\\b907ef0a02ff6e809392b1e7149198497fcc8e49\\mail-1.4.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\javax.activation\\activation\\1.1.1\\485de3a253e23f645037828c07f1d7f1af40763a\\activation-1.1.1.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-core\\1.3.0-alpha14\\c175309d97ed3c2e9a651b4268af56624397935e\\logback-core-1.3.0-alpha14.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.google.protobuf\\protobuf-java\\3.11.4\\7ec0925cc3aef0335bbc7d57edfd42b0f86f8267\\protobuf-java-3.11.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.hibernate.common\\hibernate-commons-annotations\\5.1.2.Final\\e59ffdbc6ad09eeb33507b39ffcf287679a498c8\\hibernate-commons-annotations-5.1.2.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.jboss.logging\\jboss-logging\\3.4.3.Final\\c4bd7e12a745c0e7f6cf98c45cdcdf482fd827ea\\jboss-logging-3.4.3.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\javax.persistence\\javax.persistence-api\\2.2\\25665ac8c0b62f50e6488173233239120fc52c96\\javax.persistence-api-2.2.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\net.bytebuddy\\byte-buddy\\1.12.9\\424ded9ef3496b0d997ce066f2166a4f7ec7b07a\\byte-buddy-1.12.9.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\antlr\\antlr\\2.7.7\\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\\antlr-2.7.7.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.jboss.spec.javax.transaction\\jboss-transaction-api_1.2_spec\\1.1.1.Final\\a8485cab9484dda36e9a8c319e76b5cc18797b58\\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.jboss\\jandex\\2.4.2.Final\\1e1c385990b258ff1a24c801e84aebbacf70eb39\\jandex-2.4.2.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml\\classmate\\1.5.1\\3fe0bed568c62df5e89f4f174c101eab25345b6c\\classmate-1.5.1.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.glassfish.jaxb\\jaxb-runtime\\2.3.1\\dd6dda9da676a54c5b36ca2806ff95ee017d8738\\jaxb-runtime-2.3.1.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\javax.xml.bind\\jaxb-api\\2.3.1\\8531ad5ac454cc2deb9d4d32c40c4d7451939b5d\\jaxb-api-2.3.1.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\javax.activation\\javax.activation-api\\1.2.0\\85262acf3ca9816f9537ca47d5adeabaead7cb16\\javax.activation-api-1.2.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.google.auto.service\\auto-service-annotations\\1.0.1\\ac86dacc0eb9285ea9d42eee6aad8629ca3a7432\\auto-service-annotations-1.0.1.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler-proxy\\4.1.60.Final\\2352f12826400e5db64b36fd951508ce9a61c196\\netty-handler-proxy-4.1.60.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http\\4.1.76.Final\\27cd81587a536cd4fed0a4d91466f8c2f4ffd405\\netty-codec-http-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-epoll\\4.1.76.Final\\e47ddc4704cb6d05e6503217ebe00ef8cee193f2\\netty-transport-native-epoll-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-epoll\\4.1.76.Final\\e1ee2a9c5f63b1b71260caf127a1e50667d62854\\netty-transport-native-epoll-4.1.76.Final-linux-x86_64.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-classes-epoll\\4.1.76.Final\\921b92a76116674218af3dc4bbf43d73884e4146\\netty-transport-classes-epoll-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-kqueue\\4.1.76.Final\\620dfa23b7d1e219a46766eab848f688d9a1c64a\\netty-transport-native-kqueue-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-kqueue\\4.1.76.Final\\a165a783b01ede6684e0551bde5827a03f53918\\netty-transport-native-kqueue-4.1.76.Final-osx-x86_64.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-classes-kqueue\\4.1.76.Final\\dd6d7f3e5a55e7e39a8b54d15e696ef77bcc71c0\\netty-transport-classes-kqueue-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-unix-common\\4.1.76.Final\\d5ed8c4be9680203c53f7ed788225c12c4d87ee0\\netty-transport-native-unix-common-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.typesafe.netty\\netty-reactive-streams\\2.0.4\\f77c8eaa7d5e2f2160b6d21ba385cf726f164b2\\netty-reactive-streams-2.0.4.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler\\4.1.76.Final\\36a48583fa7da27be829b843d7eee9a8d89428e3\\netty-handler-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-socks\\4.1.60.Final\\6f4573281df659265bd709fd10471c3e00ef6c70\\netty-codec-socks-4.1.60.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec\\4.1.76.Final\\42b95ef41b928284842acf36a22547ba8a09fe5\\netty-codec-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport\\4.1.76.Final\\f01d2f935005b6fdb2fedc23114d2ae717749c36\\netty-transport-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-buffer\\4.1.76.Final\\231f5042a5050773eb22a918e84daff3f00892f2\\netty-buffer-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver\\4.1.76.Final\\e0b225a33772cb7bba73dc296cccefa6826ab8cc\\netty-resolver-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-common\\4.1.76.Final\\38d0b500f098dc89497b6e608d7427186f533cf0\\netty-common-4.1.76.Final.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-exporter-logging\\1.13.0\\1d53b783d3f565606e19776a3411fb34fa642238\\opentelemetry-exporter-logging-1.13.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-extension-autoconfigure\\1.13.0-alpha\\f01d20fb5b8a314c4ae69c34f1c2cbbe7c78c71f\\opentelemetry-sdk-extension-autoconfigure-1.13.0-alpha.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-extension-autoconfigure-spi\\1.13.0\\5b9bdd69f54b28bb336516d05d08fc32c3b7448b\\opentelemetry-sdk-extension-autoconfigure-spi-1.13.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk\\1.13.0\\2b2a72c07c88b9df272c85c55f6b37b30ef88932\\opentelemetry-sdk-1.13.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-trace\\1.13.0\\522d7bd82da2fbd53e782062d87e1d3872e196e5\\opentelemetry-sdk-trace-1.13.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-metrics\\1.13.0-alpha\\231fbb2c38ed6456244948ae13221de21bd236e0\\opentelemetry-sdk-metrics-1.13.0-alpha.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-logs\\1.13.0-alpha\\346a4cf9b4778ff97b2ecca28344ff2bccfca625\\opentelemetry-sdk-logs-1.13.0-alpha.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-sdk-common\\1.13.0\\1da9c40ece22166bea9952b95b7e0295e2cdf944\\opentelemetry-sdk-common-1.13.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-semconv\\1.13.0-alpha\\3fa7b8f67d9fb77cee450a2e0727e1978032d6ad\\opentelemetry-semconv-1.13.0-alpha.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-api\\1.13.0\\558f0bc9bb80f639a6edf816872a4acb7edd2a88\\opentelemetry-api-1.13.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.opentelemetry\\opentelemetry-context\\1.13.0\\abb6a2c76fdf132724b3462d0b5ec0966892e0df\\opentelemetry-context-1.13.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\io.ous\\jtoml\\2.0.0\\2085505b2b173e14b2a7702edd703ce185fd6206\\jtoml-2.0.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-exec\\1.3\\8dfb9facd0830a27b1b5f29f84593f0aeee7773b\\commons-exec-1.3.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.glassfish.jaxb\\txw2\\2.3.1\\a09d2c48d3285f206fafbffe0e50619284e92126\\txw2-2.3.1.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.sun.istack\\istack-commons-runtime\\3.0.7\\c197c86ceec7318b1284bffb49b54226ca774003\\istack-commons-runtime-3.0.7.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.jvnet.staxex\\stax-ex\\1.8\\8cc35f73da321c29973191f2cf143d29d26a1df7\\stax-ex-1.8.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.sun.xml.fastinfoset\\FastInfoset\\1.2.15\\bb7b7ec0379982b97c62cd17465cb6d9155f68e8\\FastInfoset-1.2.15.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.google.guava\\failureaccess\\1.0.1\\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\\failureaccess-1.0.1.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.google.guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\b421526c5f297295adef1c886e5246c39d4ac629\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.checkerframework\\checker-qual\\3.12.0\\d5692f0526415fcc6de94bb5bfbd3afd9dd3b3e5\\checker-qual-3.12.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.google.errorprone\\error_prone_annotations\\2.11.0\\c5a0ace696d3f8b1c1d8cc036d8c03cc0cbe6b69\\error_prone_annotations-2.11.0.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.google.j2objc\\j2objc-annotations\\1.3\\ba035118bc8bac37d7eff77700720999acd9986d\\j2objc-annotations-1.3.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\org.reactivestreams\\reactive-streams\\1.0.3\\d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0\\reactive-streams-1.0.3.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\com.sun.activation\\jakarta.activation\\1.2.2\\74548703f9851017ce2f556066659438019e7eb5\\jakarta.activation-1.2.2.jar;C:\\Users\\panti\\.gradle\\caches\\modules-2\\files-2.1\\dev.failsafe\\failsafe\\3.2.3\\8e004e3b315d7eff434463942314900c3a43f821\\failsafe-3.2.3.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, hbm2ddl.auto=validate, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Moscow, java.vm.specification.version=17, os.name=Windows 10, user.country=RU, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files\Java\jdk-17.0.2\bin, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 13', jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\panti, user.language=ru, java.specification.vendor=Oracle Corporation, org.gradle.native=false, hibernate.cache.provider_class=org.hibernate.cache.internal.NoCachingRegionFactory, java.version.date=2022-01-18, java.home=C:\Program Files\Java\jdk-17.0.2, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, cache.provider_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.hbm2ddl.auto=validate, user.script=, connection.password=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.2+8-LTS-86, user.name=panti, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/bugtracker, connection.pool_size=1, file.encoding=windows-1251, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, show_sql=true, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\panti\AppData\Local\Temp\, java.version=17.0.2, user.dir=C:\Learning\java_pft2\mantis-tests, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, org.gradle.internal.worker.tmpdir=C:\Learning\java_pft2\mantis-tests\build\tmp\test\work, sun.os.patch.level=, connection.driver_class=com.mysql.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@28ee7bee, native.encoding=Cp1251, java.library.path=C:\Program Files\Java\jdk-17.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Zulu\zulu-8\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk-17.0.2\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\panti\AppData\Local\Microsoft\WindowsApps;C:\Users\panti\AppData\Local\GitHubDesktop\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=17.0.2+8-LTS-86, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.pool_size=1, connection.url=jdbc:mysql://localhost:3306/bugtracker, java.class.version=61.0}
+1088 [Test worker] DEBUG o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+1089 [Test worker] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+1089 [Test worker] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@435e60ff] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@71f1cc02]
+1134 [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.mantis.model.UserData] is safe
+1134 [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.mantis.model.UserData
+1279 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: ru.stqa.pft.mantis.model.UserData
+1279 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select id from mantis_user_table where id =?
+1279 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select userdata_.id, userdata_.email as email2_0_, userdata_.password as password3_0_, userdata_.username as username4_0_ from mantis_user_table userdata_ where userdata_.id=?
+1279 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into mantis_user_table (email, password, username, id) values (?, ?, ?, ?)
+1279 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update mantis_user_table set email=?, password=?, username=? where id=?
+1279 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from mantis_user_table where id=?
+1295 [Test worker] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3d8d17a3]
+1296 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1296 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : password
+1296 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+1296 [Test worker] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1303 [Test worker] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1305 [Test worker] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=ru.stqa.pft.mantis.model.UserData)
+    - Returns
+       - EntityReturnImpl(entity=ru.stqa.pft.mantis.model.UserData, querySpaceUid=<gen:0>, path=ru.stqa.pft.mantis.model.UserData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.stqa.pft.mantis.model.UserData)
+          - SQL table alias mapping - userdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1306 [Test worker] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity ru.stqa.pft.mantis.model.UserData [NONE]: select userdata0_.id as id1_0_0_, userdata0_.email as email2_0_0_, userdata0_.password as password3_0_0_, userdata0_.username as username4_0_0_ from mantis_user_table userdata0_ where userdata0_.id=?
+1335 [Test worker] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@388c519] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+1442 [Test worker] DEBUG o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+1442 [Test worker] DEBUG o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+1446 [Test worker] DEBUG o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+1446 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+1447 [Test worker] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+1447 [Test worker] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+1450 [Test worker] DEBUG o.h.s.i.SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+1454 [Test worker] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@5bf9ea6b
+1455 [Test worker] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: bd19a8a8-bc84-4233-8ec6-b2df47e6b35e (<unnamed>)
+1455 [Test worker] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+1506 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: AUTH
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: DATA
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: EHLO
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: HELO
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: HELP
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: MAIL
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: NOOP
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: QUIT
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: RCPT
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: RSET
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: STARTTLS
+1507 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: VRFY
+1507 [Test worker] INFO  o.s.smtp.server.SMTPServer - SMTP server *:25 starting
+1508 [org.subethamail.smtp.server.ServerThread *:25] INFO  o.s.smtp.server.ServerThread - SMTP server *:25 started
+1546 [Test worker] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+1550 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+1550 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+1558 [Test worker] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@183fc2fa
+1574 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from ru.stqa.pft.mantis.model.UserData where username != 'administrator' and enabled = 1
+1577 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+1581 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[DOT] Node: '.'
+    |           |  +-[DOT] Node: '.'
+    |           |  |  +-[DOT] Node: '.'
+    |           |  |  |  +-[DOT] Node: '.'
+    |           |  |  |  |  +-[IDENT] Node: 'ru'
+    |           |  |  |  |  \-[IDENT] Node: 'stqa'
+    |           |  |  |  \-[IDENT] Node: 'pft'
+    |           |  |  \-[IDENT] Node: 'mantis'
+    |           |  \-[IDENT] Node: 'model'
+    |           \-[IDENT] Node: 'UserData'
+    \-[WHERE] Node: 'where'
+       \-[AND] Node: 'and'
+          +-[NE] Node: '!='
+          |  +-[IDENT] Node: 'username'
+          |  \-[QUOTED_STRING] Node: ''administrator''
+          \-[EQ] Node: '='
+             +-[IDENT] Node: 'enabled'
+             \-[NUM_INT] Node: '1'
+
+1597 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+1606 [Test worker] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : ru.stqa.pft.mantis.model.UserData (<no alias>) -> userdata0_
+1609 [Test worker] DEBUG o.h.h.i.ast.tree.FromReferenceNode - Resolved : {synthetic-alias} -> {synthetic-alias}
+1609 [Test worker] DEBUG o.h.hql.internal.ast.tree.DotNode - getDataType() : username -> org.hibernate.type.StringType@61c76850
+1610 [Test worker] DEBUG o.h.h.i.ast.tree.FromReferenceNode - Resolved : {synthetic-alias}.username -> userdata0_.username
+1613 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+1613 [Test worker] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} mantis_user_table userdata0_ ) ( where ( and ( != ( userdata0_.username {synthetic-alias} username ) 'administrator' ) ( = enabled 1 ) ) ) )
+1616 [Test worker] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+1618 [Test worker] DEBUG o.h.h.i.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity UserData): [mantis_user_table]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(ru.stqa.pft.mantis.model.UserData)
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-SqlNode
+          +-BinaryLogicOperatorNode
+          |  +-DotNode
+          |  | persister: SingleTableEntityPersister(ru.stqa.pft.mantis.model.UserData)
+          |  | path: {synthetic-alias}.username
+          |  |  +-IdentNode
+          |  |  | persister: SingleTableEntityPersister(ru.stqa.pft.mantis.model.UserData)
+          |  |  | originalText: {synthetic-alias}
+          |  |  \-IdentNode
+          |  |    persister: null
+          |  |    originalText: username
+          |  \-LiteralNode
+          \-BinaryLogicOperatorNode
+             +-IdentNode
+             | persister: null
+             | originalText: enabled
+             \-LiteralNode
+
+1621 [Test worker] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [mantis_user_table userdata0_]
+1622 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+1623 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (mantis_user_table)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'userdata0_.id as id1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=mantis_user_table,tableAlias=userdata0_,origin=null,columns={,className=ru.stqa.pft.mantis.model.UserData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'userdata0_.email as email2_0_, userdata0_.password as password3_0_, userdata0_.username as username4_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[userdata0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'mantis_user_table userdata0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=mantis_user_table,tableAlias=userdata0_,origin=null,columns={,className=ru.stqa.pft.mantis.model.UserData}}
+    \-[WHERE] SqlNode: 'where'
+       \-[AND] SqlNode: 'and'
+          +-[NE] BinaryLogicOperatorNode: '!='
+          |  +-[DOT] DotNode: 'userdata0_.username' {propertyName=username,dereferenceType=PRIMITIVE,getPropertyPath=username,path={synthetic-alias}.username,tableAlias=userdata0_,className=ru.stqa.pft.mantis.model.UserData,classAlias=null}
+          |  |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  |  \-[IDENT] IdentNode: 'username' {originalText=username}
+          |  \-[QUOTED_STRING] LiteralNode: ''administrator''
+          \-[EQ] BinaryLogicOperatorNode: '='
+             +-[IDENT] IdentNode: 'enabled' {originalText=enabled}
+             \-[NUM_INT] LiteralNode: '1'
+
+1623 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+1628 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from ru.stqa.pft.mantis.model.UserData where username != 'administrator' and enabled = 1
+1628 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select userdata0_.id as id1_0_, userdata0_.email as email2_0_, userdata0_.password as password3_0_, userdata0_.username as username4_0_ from mantis_user_table userdata0_ where userdata0_.username<>'administrator' and enabled=1
+1628 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+1639 [Test worker] DEBUG org.hibernate.SQL - select userdata0_.id as id1_0_, userdata0_.email as email2_0_, userdata0_.password as password3_0_, userdata0_.username as username4_0_ from mantis_user_table userdata0_ where userdata0_.username<>'administrator' and enabled=1
+1648 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+1650 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#2]
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#3]
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#4]
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#5]
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#6]
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#7]
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#8]
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#9]
+1655 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#10]
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#11]
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 10
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#13]
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 11
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#14]
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 12
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#15]
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 13
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#16]
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 14
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#17]
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 15
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#18]
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 16
+1656 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#19]
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 17
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#20]
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 18
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#21]
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 19
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#22]
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 20
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#23]
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 21
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#24]
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 22
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#25]
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 23
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#26]
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 24
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#27]
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 25
+1657 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#28]
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 26
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#29]
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 27
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#30]
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 28
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#31]
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 29
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#32]
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 30
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#33]
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 31
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#34]
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 32
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#35]
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 33
+1658 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.pft.mantis.model.UserData#36]
+1660 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#2]
+1661 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = pantin_42@inbox.ru
+1661 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1661 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = a3a04c8aa10bafa33d7696cbfbec9f69
+1661 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1661 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = alexanderpantin
+1661 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#2]
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#3]
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655130644204@localhost.localdomain
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 9922f1fb101a84d75561a8099e1f9c42
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655130644204
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#3]
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#4]
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = pantin_042@inbox.ru
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = c14c91b37000e77933880036dd415e35
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = alexanderpaintin
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#4]
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#5]
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655130784324@localhost.localdomain
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = bcd8e4bc55210848a67d644e7ec29c99
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655130784324
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#5]
+1662 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#6]
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655149851841@localhost.localdomain
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 88162595c58939c4ae0b35f39892e6e7
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655149851841
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#6]
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#7]
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = ddd@dd.ru
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 9d82244ca30bdaf6e2d275f7fd15799f
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = ddd
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#7]
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#8]
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655150167009@localhost.localdomain
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 78ac7b7e655d88a6792647abe10566f8
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655150167009
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#8]
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#9]
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = ddd@dd123.ru
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 88162595c58939c4ae0b35f39892e6e7
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = 123
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1663 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#9]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#10]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655150369010@localhost.localdomain
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 88162595c58939c4ae0b35f39892e6e7
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655150369010
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#10]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#11]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655150397960@localhost.localdomain
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 88162595c58939c4ae0b35f39892e6e7
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655150397960
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#11]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#13]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = saio_oakki@list.ru
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 88162595c58939c4ae0b35f39892e6e7
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = 111
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#13]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#14]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655150796523@localhost.localdomain
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 43f63a9d44a03ded1e03bb0fafa59147
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655150796523
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#14]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#15]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655150936696@localhost.localdomain
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 7b273de0c1dec23f3383c5476fef8c09
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655150936696
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#15]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#16]
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655150971199@localhost.localdomain
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 88162595c58939c4ae0b35f39892e6e7
+1664 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655150971199
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#16]
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#17]
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655163517490@localhost.localdomain
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = a1dbbf6455450b40cf80c6791e2aa9a8
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655163517490
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#17]
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#18]
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655163779958@localhost
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655163779958
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#18]
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#19]
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655208325705@localhost
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = d7b99022e402a1a1b5a21183f3dc0c49
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655208325705
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#19]
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#20]
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655208359603@localhost
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 93e46a8e32d7d2026980953b011b2776
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1665 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655208359603
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#20]
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#21]
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655208399766@localhost
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 02ba68ed7c69b933e0fd16e020e92d48
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655208399766
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#21]
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#22]
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655213852863@localhost
+1666 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655213852863
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#22]
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#23]
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655213890343@localhost
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655213890343
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#23]
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#24]
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655213978738@localhost
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = b2ad14695a609c27139203f32a694c46
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655213978738
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#24]
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#25]
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655214653337@localhost
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655214653337
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#25]
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#26]
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655215066854@localhost
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655215066854
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1667 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#26]
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#27]
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655215241770@localhost
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655215241770
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#27]
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#28]
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655215443148@localhost
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 88162595c58939c4ae0b35f39892e6e7
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655215443148
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#28]
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#29]
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655216423627@localhost
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655216423627
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#29]
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#30]
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655218202727@localhost
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 042bd588f9bb4001cac89babad7f9d4b
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655218202727
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#30]
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#31]
+1668 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655218269877@localhost
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655218269877
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#31]
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#32]
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655235132644@localhost
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655235132644
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#32]
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#33]
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655421817846@localhost
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655421817846
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#33]
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#34]
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655421894849@localhost
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655421894849
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#34]
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#35]
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655421914202@localhost
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 88162595c58939c4ae0b35f39892e6e7
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655421914202
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1669 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#35]
+1670 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving attributes for [ru.stqa.pft.mantis.model.UserData#36]
+1670 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `email` : value = user1655423156213@localhost
+1670 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+1670 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `password` : value = 5f4dcc3b5aa765d61d8327deb882cf99
+1670 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+1670 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Processing attribute `username` : value = user1655423156213
+1670 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+1670 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.pft.mantis.model.UserData#36]
+1672 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+1673 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+1678 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+1683 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 34 objects
+1683 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=c14c91b37000e77933880036dd415e35, id=4, email=pantin_042@inbox.ru, username=alexanderpaintin}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=9922f1fb101a84d75561a8099e1f9c42, id=3, email=user1655130644204@localhost.localdomain, username=user1655130644204}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=a3a04c8aa10bafa33d7696cbfbec9f69, id=2, email=pantin_42@inbox.ru, username=alexanderpantin}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=88162595c58939c4ae0b35f39892e6e7, id=11, email=user1655150397960@localhost.localdomain, username=user1655150397960}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=88162595c58939c4ae0b35f39892e6e7, id=10, email=user1655150369010@localhost.localdomain, username=user1655150369010}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=88162595c58939c4ae0b35f39892e6e7, id=9, email=ddd@dd123.ru, username=123}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=78ac7b7e655d88a6792647abe10566f8, id=8, email=user1655150167009@localhost.localdomain, username=user1655150167009}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=9d82244ca30bdaf6e2d275f7fd15799f, id=7, email=ddd@dd.ru, username=ddd}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=88162595c58939c4ae0b35f39892e6e7, id=6, email=user1655149851841@localhost.localdomain, username=user1655149851841}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=bcd8e4bc55210848a67d644e7ec29c99, id=5, email=user1655130784324@localhost.localdomain, username=user1655130784324}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=93e46a8e32d7d2026980953b011b2776, id=20, email=user1655208359603@localhost, username=user1655208359603}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=d7b99022e402a1a1b5a21183f3dc0c49, id=19, email=user1655208325705@localhost, username=user1655208325705}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=5f4dcc3b5aa765d61d8327deb882cf99, id=18, email=user1655163779958@localhost, username=user1655163779958}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=a1dbbf6455450b40cf80c6791e2aa9a8, id=17, email=user1655163517490@localhost.localdomain, username=user1655163517490}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=88162595c58939c4ae0b35f39892e6e7, id=16, email=user1655150971199@localhost.localdomain, username=user1655150971199}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=7b273de0c1dec23f3383c5476fef8c09, id=15, email=user1655150936696@localhost.localdomain, username=user1655150936696}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=43f63a9d44a03ded1e03bb0fafa59147, id=14, email=user1655150796523@localhost.localdomain, username=user1655150796523}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=88162595c58939c4ae0b35f39892e6e7, id=13, email=saio_oakki@list.ru, username=111}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=88162595c58939c4ae0b35f39892e6e7, id=28, email=user1655215443148@localhost, username=user1655215443148}
+1685 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=5f4dcc3b5aa765d61d8327deb882cf99, id=27, email=user1655215241770@localhost, username=user1655215241770}
+1686 [Test worker] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.mantis.model.UserData{password=5f4dcc3b5aa765d61d8327deb882cf99, id=26, email=user1655215066854@localhost, username=user1655215066854}
+1686 [Test worker] DEBUG o.h.internal.util.EntityPrinter - More......
+1687 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+1688 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+1783 [Test worker] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+1785 [Test worker] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+1785 [Test worker] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+1788 [Test worker] DEBUG i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4a9b3956
+1805 [Test worker] DEBUG i.n.u.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+1805 [Test worker] DEBUG i.n.u.internal.PlatformDependent0 - Java version: 17
+1806 [Test worker] DEBUG i.n.u.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+1806 [Test worker] DEBUG i.n.u.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+1807 [Test worker] DEBUG i.n.u.internal.PlatformDependent0 - java.nio.Buffer.address: available
+1807 [Test worker] DEBUG i.n.u.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+1808 [Test worker] DEBUG i.n.u.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+1808 [Test worker] DEBUG i.n.u.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @48c76607
+1810 [Test worker] DEBUG i.n.u.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+1810 [Test worker] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+1817 [Test worker] DEBUG i.n.util.internal.PlatformDependent - maxDirectMemory: 536870912 bytes (maybe)
+1817 [Test worker] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\panti\AppData\Local\Temp (java.io.tmpdir)
+1818 [Test worker] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+1818 [Test worker] DEBUG i.n.util.internal.PlatformDependent - Platform: Windows
+1818 [Test worker] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+1818 [Test worker] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+1819 [Test worker] DEBUG i.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+1819 [Test worker] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+1825 [Test worker] DEBUG i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+1839 [Test worker] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+1839 [Test worker] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+1927 [Test worker] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+1927 [Test worker] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+1946 [Test worker] DEBUG i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 12
+1952 [Test worker] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+1952 [Test worker] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 12
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 12
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+1983 [Test worker] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+1991 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+1991 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+1991 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2264 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 5332 (auto-detected)
+2266 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2266 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2271 [Forwarding newSession on session null to remote] DEBUG i.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2271 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2278 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: f4:b5:20:ff:fe:28:11:a1 (auto-detected)
+2313 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2313 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2313 [AsyncHttpClient-1-2] DEBUG i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3576dd1
+2321 [AsyncHttpClient-1-2] DEBUG o.a.n.channel.NettyConnectListener - Using new Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to '/session'
+2334 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2334 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2334 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+2334 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+2906 [AsyncHttpClient-1-2] DEBUG i.n.h.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+2906 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 791
+
+2912 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+2980 [AsyncHttpClient-1-3] DEBUG o.a.n.channel.NettyConnectListener - Using new Channel '[id: 0xe8e24f11, L:/127.0.0.1:61033 - R:localhost/127.0.0.1:61021]' for 'GET' to '/json/version'
+2982 [AsyncHttpClient-1-3] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+host: localhost:61021
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+content-length: 428
+
+2982 [AsyncHttpClient-1-3] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:61021 for channel [id: 0xe8e24f11, L:/127.0.0.1:61033 - R:localhost/127.0.0.1:61021]
+2988 [Test worker] DEBUG i.n.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xc21ab3dafdbe1514
+2990 [AsyncHttpClient-1-4] DEBUG o.a.n.channel.NettyConnectListener - Using new Channel '[id: 0x37846f48, L:/127.0.0.1:61034 - R:localhost/127.0.0.1:61021]' for 'GET' to '/devtools/browser/c6fea089-22b7-40c4-95c8-d9e399a2d100'
+2992 [AsyncHttpClient-1-4] DEBUG o.a.netty.handler.WebSocketHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/c6fea089-22b7-40c4-95c8-d9e399a2d100 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: 9FxvtVB0zYXp5mpHv+YFIA==
+sec-websocket-version: 13
+origin: http://localhost:61021
+host: localhost:61021
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: 0DzaouLLS9O2i7dEGrZPHedCKmo=
+
+3019 [Forwarding setTimeout on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/timeouts'
+3019 [Forwarding setTimeout on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/timeouts'
+3021 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/timeouts HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 22
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+3022 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3024 [Forwarding get on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/url'
+3024 [Forwarding get on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/url'
+3033 [AsyncHttpClient-1-1] DEBUG o.a.n.channel.DefaultChannelPool - Entry count for : http://localhost:61021 : 1
+3428 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/url HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+3428 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3430 [Forwarding get on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/url'
+3430 [Forwarding get on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/url'
+3720 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/url HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 77
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+3720 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3722 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+3722 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+3734 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+3734 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3736 [Forwarding clickElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element/2b60f0dc-594f-4fc8-ace5-b8257cc97ca4/click'
+3737 [Forwarding clickElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element/2b60f0dc-594f-4fc8-ace5-b8257cc97ca4/click'
+3779 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element/2b60f0dc-594f-4fc8-ace5-b8257cc97ca4/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+3779 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3780 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+3780 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+3785 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+3786 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3795 [Forwarding getElementAttribute on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/execute/sync'
+3795 [Forwarding getElementAttribute on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/execute/sync'
+3810 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/execute/sync HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47340
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 12
+
+3811 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3812 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+3812 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+3817 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+3818 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3819 [Forwarding clearElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element/2b60f0dc-594f-4fc8-ace5-b8257cc97ca4/clear'
+3819 [Forwarding clearElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element/2b60f0dc-594f-4fc8-ace5-b8257cc97ca4/clear'
+3840 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element/2b60f0dc-594f-4fc8-ace5-b8257cc97ca4/clear HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+3841 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3842 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+3842 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+3848 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+3848 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3850 [Forwarding sendKeysToElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element/2b60f0dc-594f-4fc8-ace5-b8257cc97ca4/value'
+3851 [Forwarding sendKeysToElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element/2b60f0dc-594f-4fc8-ace5-b8257cc97ca4/value'
+3879 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element/2b60f0dc-594f-4fc8-ace5-b8257cc97ca4/value HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 211
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+3879 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3880 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+3880 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+3892 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 98
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+3892 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+3893 [Forwarding clickElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element/1440ba55-d5a1-4f27-88a6-ff60986b4237/click'
+3893 [Forwarding clickElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element/1440ba55-d5a1-4f27-88a6-ff60986b4237/click'
+4124 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element/1440ba55-d5a1-4f27-88a6-ff60986b4237/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+4125 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4126 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+4126 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+4130 [AsyncHttpClient-1-1] DEBUG o.a.n.channel.DefaultChannelPool - Entry count for : http://localhost:61021 : 1
+4138 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+4138 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4139 [Forwarding clickElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element/171ac9e3-ae28-48e7-a8af-5a581041c1b5/click'
+4139 [Forwarding clickElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element/171ac9e3-ae28-48e7-a8af-5a581041c1b5/click'
+4181 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element/171ac9e3-ae28-48e7-a8af-5a581041c1b5/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+4181 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4182 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+4182 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+4187 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+4187 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4191 [Forwarding getElementAttribute on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/execute/sync'
+4191 [Forwarding getElementAttribute on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/execute/sync'
+4205 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/execute/sync HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 47340
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 12
+
+4205 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4206 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+4206 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+4211 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+4211 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4212 [Forwarding clearElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element/171ac9e3-ae28-48e7-a8af-5a581041c1b5/clear'
+4212 [Forwarding clearElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element/171ac9e3-ae28-48e7-a8af-5a581041c1b5/clear'
+4235 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element/171ac9e3-ae28-48e7-a8af-5a581041c1b5/clear HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+4235 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4236 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+4236 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+4242 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 62
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+4242 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4243 [Forwarding sendKeysToElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element/171ac9e3-ae28-48e7-a8af-5a581041c1b5/value'
+4243 [Forwarding sendKeysToElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element/171ac9e3-ae28-48e7-a8af-5a581041c1b5/value'
+4264 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element/171ac9e3-ae28-48e7-a8af-5a581041c1b5/value HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 121
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+4264 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4265 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+4265 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+4276 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 98
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 88
+
+4276 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4277 [Forwarding clickElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element/ad391ab3-d750-4226-8e1b-71c7d5e61786/click'
+4277 [Forwarding clickElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element/ad391ab3-d750-4226-8e1b-71c7d5e61786/click'
+4736 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/element/ad391ab3-d750-4226-8e1b-71c7d5e61786/click HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+4737 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4738 [Forwarding get on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/url'
+4738 [Forwarding get on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/url'
+4760 [AsyncHttpClient-1-2] DEBUG o.a.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/11628cff268633446ac4d03e27133496/url HTTP/1.1
+User-Agent: selenium/4.1.4 (java windows)
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+host: localhost:53273
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+4760 [AsyncHttpClient-1-2] DEBUG o.a.netty.channel.ChannelManager - Adding key: http://localhost:53273 for channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]
+4761 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using pooled Channel '[id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273]' for 'POST' to 'http://localhost:53273/session/11628cff268633446ac4d03e27133496/element'
+4761 [Forwarding findElement on session 11628cff268633446ac4d03e27133496 to remote] DEBUG o.a.n.request.NettyRequestSender - Using open Channel [id: 0x2744d896, L:/127.0.0.1:61020 - R:localhost/127.0.0.1:53273] for POST '/session/11628cff268633446ac4d03e27133496/element'
+5232 [AsyncHttpClient-1-1] DEBUG o.a.n.channel.DefaultChannelPool - Entry count for : http://localhost:61021 : 1
+6336 [AsyncHttpClient-1-1] DEBUG o.a.n.channel.DefaultChannelPool - Entry count for : http://localhost:61021 : 1
+7435 [AsyncHttpClient-1-1] DEBUG o.a.n.channel.DefaultChannelPool - Entry count for : http://localhost:61021 : 1

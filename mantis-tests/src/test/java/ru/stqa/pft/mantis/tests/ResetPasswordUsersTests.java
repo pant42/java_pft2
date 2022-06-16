@@ -30,7 +30,6 @@ public class ResetPasswordUsersTests extends TestBase {
     String username = user.getUsername();
     String email = user.getEmail();
     String new_password = "new_password";
-
     app.userHelper().selectUserFromResetPassword(id, username);
 
     List<MailMessage> mailMessages = app.mail().waitForMail(1, 10000);

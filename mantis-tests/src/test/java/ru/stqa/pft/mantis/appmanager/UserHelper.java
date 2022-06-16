@@ -25,7 +25,7 @@ public class UserHelper extends HelperBase {
   }
 
   public void goToControlUser() {
-    wd.get(app.getProperty("web.baseURL") + "/manage_user_page.php");
+    wd.get(app.getProperty("web.baseURL") + app.getProperty("pathToTheUserManagePage"));
   }
 
   public void selectUser(String user) {

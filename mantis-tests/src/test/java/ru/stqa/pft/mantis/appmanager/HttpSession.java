@@ -34,7 +34,7 @@ public class HttpSession {
     post.setEntity(new UrlEncodedFormEntity(params));
     CloseableHttpResponse response = httpclient.execute(post);
     String body = getTextFrom(response);
-    return body.contains(String.format("/mantisbt-2.25.4/account_page.php\">%s</a>", username));
+    return body.contains(String.format("/"+app.getProperty("vMantis")+"/account_page.php\">%s</a>", username));
   }
 
   private String getTextFrom(CloseableHttpResponse response) throws IOException {
