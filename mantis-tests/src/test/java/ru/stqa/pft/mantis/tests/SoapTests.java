@@ -14,6 +14,8 @@ public class SoapTests extends TestBase {
 
     @Test
     public void testGetProjects() throws MalformedURLException, ServiceException, RemoteException {
+        skipIfNotFixed(0000001);        skipIfNotFixed(0000001);
+
         Set<Project> projects = app.soap().getProjects();
 
         System.out.println(projects.size());
@@ -25,7 +27,9 @@ public class SoapTests extends TestBase {
 
     @Test
     public void testCreateIssue() throws MalformedURLException, ServiceException, RemoteException {
+        skipIfNotFixed(0000002);
         //В переменную projects забирается список проектов в мантисе, а в issue - создается новый объек с параметрами указанными ниже
+
         Set<Project> projects = app.soap().getProjects();
         Issue issue = new Issue().
                 withSummary("Test issue").
