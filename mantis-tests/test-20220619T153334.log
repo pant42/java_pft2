@@ -1,9 +1,0 @@
-235  [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\panti\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml"
-412  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE SoapTests.testGetProjects()[pri:0, instance:ru.stqa.pft.mantis.SoapTests@4f638935] -50033114
-412  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
-414  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
-414  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
-414  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
-418  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\panti\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml
-
