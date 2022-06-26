@@ -1,0 +1,4 @@
+253  [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Learning\java_pft2\adressbook-web-tests\src\test\resources\testng-contacts.xml"
+387  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Learning\java_pft2\adressbook-web-tests\src\test\resources\testng-contacts.xml
+
