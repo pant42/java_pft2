@@ -20,8 +20,8 @@ public class ContactDeleteTest extends TestBase {
     if (app.db().contacts().size() == 0) {
       app.goTo().groupPage();
       app.contact().create(new ContactData().
-              withFirstname("СоздИмяУдалить").
-              withLastname("СоздФамилияУдалить")
+              withFirstname("CreatedToDelete").
+              withLastname("CreatedToDelete")
       );
     }
   }

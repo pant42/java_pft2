@@ -20,7 +20,7 @@ public class GroupModificationTest extends TestBase {
 
     if (app.db().groups().size() == 0) {
       app.goTo().groupPage();
-      app.group().create(new GroupData().withName("ПрекондМодиГруппы1"));
+      app.group().create(new GroupData().withName("CreToDel"));
     }
   }
 

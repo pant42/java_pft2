@@ -87,7 +87,7 @@ public class GroupCreationTest extends TestBase {
     Groups before = app.db().groups();
 
     GroupData group = new GroupData().
-            withName("Тест2'");
+            withName("Test2'");
 
     app.group().create(group);
 

@@ -27,8 +27,8 @@ public class ContactPhoneEmailTest extends TestBase {
 
     if (!app.contact().isThereAContact()) {
       app.contact().create(new ContactData().
-              withFirstname("СоздИмяУдалить").
-              withLastname("СоздФамилияУдалить"));
+              withFirstname("CPENameToDel").
+              withLastname("CPELastNameToDel"));
     }
   }
 
