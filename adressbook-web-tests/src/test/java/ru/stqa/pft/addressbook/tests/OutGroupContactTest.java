@@ -42,14 +42,15 @@ public class OutGroupContactTest extends TestBase {
     if (contact.getGroups().size() == 0) {
 
       GroupData new_group = app.db().groups().iterator().next();
+      app.contact().gotoHomePage();
       app.contact().contactInGroup(contact, new_group);
-      app.goTo().homePage();
+
     }
 
     ContactData new_contact = app.db().getContactById(i);
 
     Groups groupDelete = new_contact.getGroups();
-
+    app.goTo().homePage();
     app.contact().contactRemoveGroup(new_contact);
 
     assertThat(app.db().getContactById(contact.getId()).getGroups().contains(groupDelete), equalTo(false));

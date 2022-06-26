@@ -241,7 +241,6 @@ public class ContactHelper extends HelperBase {
   //-----Для удаления контакта из группы
 
   public void contactRemoveGroup(ContactData contact) {
-    wd.findElement(By.name("group")).click();
     new Select(wd.findElement(By.name("group"))).selectByVisibleText(contact.getGroups().iterator().next().getName());
     selectContactById(contact.getId());
     removeToGroup();
