@@ -225,8 +225,7 @@ public class ContactHelper extends HelperBase {
   public void selectGroupForContact(ContactData contact, GroupData group) {
     if (contact.getGroups().size() > 0)
       Assert.assertEquals(contact.getGroups().size(), 1);
-    new Select(wd.findElement(By.name("to_group")))
-            .selectByVisibleText(group.getName());
+    new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(group.getName());
   }
 
   public void addInGroup() {
@@ -242,6 +241,7 @@ public class ContactHelper extends HelperBase {
   //-----Для удаления контакта из группы
 
   public void contactRemoveGroup(ContactData contact) {
+    wd.findElement(By.name("group")).click();
     new Select(wd.findElement(By.name("group"))).selectByVisibleText(contact.getGroups().iterator().next().getName());
     selectContactById(contact.getId());
     removeToGroup();

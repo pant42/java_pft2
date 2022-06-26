@@ -79,8 +79,6 @@ public class ContactDataGenerator {
     }
   }
 //--------------------------------------------------------------------------------------------------------------------
-
-
   private List<ContactData> generateContacts(int count) {
 
     List<ContactData> contacts = new ArrayList<ContactData>();
@@ -89,7 +87,7 @@ public class ContactDataGenerator {
               withFirstname(String.format("xcname%s", i)).
               withLastname(String.format("xclastname%s", i)).
               withAddress(String.format("xaddress%s", i)).
-              withHomePhone(String.format("00000%s", i)).
+              withHomePhone(String.format("8800555%s", i)).
               withEmail(String.format("qwer%s@ff.com", i)).
               withPhoto(new File("src/test/resources/stru.png"))
 

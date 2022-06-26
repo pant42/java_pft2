@@ -16,7 +16,7 @@ public class ContactPhoneEmailTest extends TestBase {
   public static String cleaned(String phone) {
     return phone.
             replaceAll("\\s", "").
-            replaceAll("[-()]", "");
+            replaceAll("[-+()]", "");
   }
 
   @BeforeMethod
